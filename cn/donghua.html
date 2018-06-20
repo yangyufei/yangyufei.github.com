@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画</title>
+</head>
+<style>
+	.inner {
+		width: 116px;
+		height: 72px;
+		background: url(../images/demo/10.png) 0 0 no-repeat;
+		-webkit-animation: bg .3s steps(3) infinite alternate;
+		animation: bg .3s steps(3) infinite alternate;
+	}
+	@-webkit-keyframes bg {
+		0% {
+			background-position: 0px 0px;
+		}
+		100% {
+			background-position: -348px 0px;
+		}
+	}
+	@keyframes bg {
+		0% {
+			background-position: 0px 0px;
+		}
+		100% {
+			background-position: -348px 0px;
+		}
+	}
+</style>
+<body>
+	<div class="inner"></div>
+</body>
+</html>

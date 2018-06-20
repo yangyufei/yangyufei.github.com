@@ -1,0 +1,528 @@
+.mine-wrap {
+	width: 100%;
+	padding-bottom: 4.5rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mine-top {
+	padding: 0.92rem 5%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #333;
+}
+.mine-set {
+	width: 100%;
+	height: 1.58rem;
+}
+.mine-set a {
+	float: right;
+	width: 1.53rem;
+	height: 1.53rem;
+	background: url(../images/set.png) center center no-repeat;
+	background-size: contain;
+}
+.mine-top img {
+	display: block;
+	width: 21%;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 2px solid #bebebe;
+}
+.mine-top h1 {
+	overflow: hidden;
+	width: 100%;
+	margin: 0.5rem 0;
+	text-align: center;
+	color: white;
+	font-size: 1.33rem;
+	font-weight: bold;
+}
+.mine-top p {
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 0.89rem;
+	font-family: "Microsoft Yahei";
+}
+.mine-con li {
+	width: 100%;
+	height: 3.33rem;
+	padding: 0 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid #f6f6f6;
+	background: white;
+	line-height: 3.33rem;
+}
+.my-collection span,
+.my-message span,
+.my-friend span, 
+.my-opinion span,
+.my-news span {
+	float: left;
+	width: 6%;
+	height: 3.33rem;
+	margin-right: 3%;
+}
+.my-collection span {
+	background: url(../images/star.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.my-message span {
+	background: url(../images/message.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.my-friend span {
+	background: url(../images/share.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.my-opinion span {
+	background: url(../images/opinion.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.my-news span {
+	background: url(../images/news.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.my-collection var,
+.my-message var,
+.my-friend var,
+.my-opinion var,
+.my-news var {
+	color: #272727;
+	font-size: 0.89rem;
+}
+.my-collection i,
+.my-message i,
+.my-friend i,
+.my-opinion i,
+.my-news i {
+	float: right;
+	width: 3%;
+	height: 3.33rem;
+	background: url(../images/more.png) center center no-repeat;
+	background-size: 100% auto;
+	font-style: normal;
+}
+.my-message strong,
+.my-news strong {
+	float: right;
+	width: 69%;
+	margin-right: 3%;
+	color: #b39851;
+	font-size: 0.81rem;
+	text-align: right;
+	background: url(../images/round.png) 0 39% no-repeat;
+	background-size: 3% auto;
+}
+.mask {
+	display: none;
+	position: absolute;
+	z-index :100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.65);
+}
+.mask-con {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 1.5rem 0 1.8rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mask-con li {
+	float: left;
+	width: 25%;
+	margin-bottom: .5rem;
+}
+#share a {
+	display: block;
+	width: 100%;
+	height: 3.75rem;
+	padding: 0;
+	margin: 0 auto .4rem;
+}
+#share var {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #fefefe;
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
+#share a.bds_weixin {
+	background: url(../images/weixin.png) center center no-repeat;
+	background-size: contain;
+}
+#share a.bds_tsina {
+	background: url(../images/weibo.png) center center no-repeat;
+	background-size: contain;
+}
+#share a.bds_qzone {
+	background: url(../images/qq.png) center center no-repeat;
+	background-size: contain;
+}
+#share a.bds_sqq {
+	background: url(../images/chat.png) center center no-repeat;
+	background-size: contain;
+}
+#share a.bds_copy {
+	background: url(../images/copy.png) center center no-repeat;
+	background-size: contain;
+}
+#share a.bds_qzone {
+	background: url(../images/qq.png) center center no-repeat;
+	background-size: contain;
+}
+/*.mask-con li:nth-child(1) a {
+	background: url(../images/friend.png) center center no-repeat;
+	background-size: contain;
+}
+.mask-con li:nth-child(2) a {
+	background: url(../images/weixin.png) center center no-repeat;
+	background-size: contain;
+}
+.mask-con li:nth-child(3) a {
+	background: url(../images/weibo.png) center center no-repeat;
+	background-size: contain;
+}
+.mask-con li:nth-child(4) a {
+	background: url(../images/qq.png) center center no-repeat;
+	background-size: contain;
+}
+.mask-con li:nth-child(5) a {
+	background: url(../images/chat.png) center center no-repeat;
+	background-size: contain;
+}
+.mask-con li:nth-child(6) a {
+	background: url(../images/copy.png) center center no-repeat;
+	background-size: contain;
+}*/
+.mask-delete {
+	width: 1.92rem;
+	height: 1.92rem;
+	margin: 2rem auto 0;
+	background: url(../images/mask_delete.png) center center no-repeat;
+	background-size: contain;
+}
+/*消息页面*/
+.my-message strong b,
+.my-news strong b {
+	font-weight: normal;
+}
+.new-message strong,
+.new-news strong {
+	width: 76% !important;
+}
+.new-message,
+.new-news {
+	margin-bottom: .5rem;
+	border-bottom: 1px solid #e4e4e4;
+}
+/*新的评论页面*/
+.newsay {
+	width: 100%;
+	margin-bottom: 3rem;
+	/*height: 100%;*/
+	/*padding-bottom: 4rem;*/
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: white;
+}
+.newsay li {
+	width: 100%;
+	padding: 1.08rem 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e4e4e4;
+	background: white;
+}
+.newsay dl {
+	margin-bottom: 1rem;
+}
+.newsay dt, .newsay dd {
+	float: left;
+}
+.newsay dd {
+	width: 84%;
+}
+.newsay dt {
+	overflow: hidden;
+	width: 3rem;
+	height: 3rem;
+	margin-right: 3%;
+	border-radius: 50%;
+	border: 1px solid #dbdbdb;
+}
+.dd-left, .dd-right {
+	float: left;
+}
+.dd-left {
+	width: 83%;
+	height: 3rem;
+	padding-top: .3rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.dd-right {
+	width: 2.8rem;
+	padding-top: .2rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.dd-left h2 {
+	color: #272727;
+	font-size: 1.08rem;
+}
+.dd-left p {
+	color: #bebebe;
+	font-size: 0.83rem;
+}
+.newsay-p {
+	/*padding-right: 22%;*/
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 0.96rem;
+	line-height: 1.6rem;
+}
+.read-already {
+	width: 100%;
+	height: 2rem;
+	padding-left: 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e4e4e4;
+	line-height: 2rem;
+	color: #bebebe;
+	background: #f8f8f8;
+}
+/*评论页面*/
+.saydd-right {
+	width: 17%;
+	height: 3rem;
+}
+.newsay dd {
+	position: relative;
+}
+.saydd-right label {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 3rem;
+	height: 3rem;
+	background: url(../images/message.png) center .5rem no-repeat;
+	background-size: auto 58%;
+}
+
+.content-footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.67rem 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-top: #e6e6e6;
+	background: white;
+	border-top: 1px solid #f1f1f1;
+}
+.confooter-inp {
+	float: left;
+	position: relative;
+	width: 70%;
+	height: 2.67rem;
+	padding-left: 5%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url(../images/input.png) center center no-repeat;
+	background-size: contain;
+	
+}
+.confooter-inp label {
+	position: absolute;
+	top: 0rem;
+	left: 9%;
+	line-height: 2.67rem;
+	color: #c3c3c3;
+}
+.content-footer input {
+	width: 90%;
+	height: 2.5rem;
+	/*opacity: 0;*/
+	padding: 0 2%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	background: rgba(255, 255, 255, 0);
+}
+.content-footer span, .content-footer div, .content-footer i {
+	float: left;
+}
+.content-footer span {
+	width: 14%;
+	height: 2.67rem;
+	margin-right: 2%;
+	background: url(../images/say1.png) center center no-repeat;
+	background-size: auto 64%;
+}
+/*.content-footer div {
+	width: 78%;
+	height: 2.67rem;
+	padding: 0 5%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	background: url(../images/input.png) center center no-repeat;
+	background-size: 100% auto;
+}*/
+.say-p {
+	padding-right: 0 !important;
+}
+.comment-con {
+	padding: 0.5rem 0 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+.comment-con p {
+	width: 100%;
+	/*overflow: hidden;*/
+	/*white-space: nowrap;*/
+	/*display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;*/
+	color: #666;
+	font-size: 0.85rem;
+	line-height: 1.5rem;
+}
+.comment-con strong {
+	color: #b39851;
+	font-size: 0.85rem;
+}
+/*.say-reply.limitheight {
+	overflow: hidden;
+	height: 3.8rem;
+}*/
+.say-reply.limitheight {
+	overflow: hidden;
+}
+.say-reply div {
+	font-size: 0.83rem;
+	color: #bebebe;
+}
+.say-reply li {
+	padding: 0;
+	margin-bottom: .2rem;
+	border: 0;
+}
+.version2-seeall {
+	display: block;
+	width: 100%;
+	/*height: 1.83rem;*/
+	margin-top: .5rem;
+	text-align: left;
+	font-size: .93rem;
+	color: #b39851;
+}
+.version2 {
+	padding-bottom: 4rem;
+}
+/*.say-open {
+	display: block;
+	width: 50%;
+	margin: .5rem auto 0;
+	text-align: center;
+	color: #b39851;
+	font-size: 0.92rem;
+}*/
+/*.comment-con .limitp {
+	overflow: hidden;
+	height: 3rem;
+}*/
+/*.say-reply .seemore2 {
+	width: 100%;
+	height: 2rem;
+	color: #b39851;
+	font-size: .85rem;
+	line-height: 2rem;
+}*/
+/*话题*/
+.theme-top {
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 1rem 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: white;
+	border-bottom: 1px solid #e9e9e9;
+}
+.theme-top dl {
+	margin-bottom: 1rem;
+}
+.theme-top dt, .theme-top dd {
+	float: left;
+}
+.theme-top dd {
+	width: 82%;
+	padding-top: .4rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.theme-top dt {
+	overflow: hidden;
+	width: 3rem;
+	height: 3rem;
+	margin-right: 3%;
+	border-radius: 50%;
+	border: 1px solid #bebebe;
+}
+.theme-left {
+	float: left;
+	width: 52%;
+}
+.theme-right {
+	float: right;
+	width: 48%;
+	font-size: 0.81rem;
+	color: #999;
+	text-align: right;
+}
+.theme-left h2 {
+	font-size: 1.08rem;
+	color: #272727;
+}
+.theme-left p {
+	font-size: 0.74rem;
+	color: #bebebe;
+}
+.theme-detail {
+	font-size: 0.96rem;
+	color: #666;
+}
+.themedd-right span {
+	float: left;
+	width: 1.33rem;
+	height: 3rem;
+	background: url(../images/love1.png) center center no-repeat;
+	background-size: 90% auto;
+}
+.themedd-right .selectspan {
+	background: url(../images/love2.png) center center no-repeat;
+	background-size: contain;
+}
+.themedd-right var {
+	float: left;
+	margin-left: 2%;
+	line-height: 3rem;
+	font-size: 0.9rem;
+	color: #999;
+}

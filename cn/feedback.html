@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>意见与反馈</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/feedback.css">
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+<body>
+	<div class="new-wrap">
+		<div class="con-top clearfix">
+			<a href="javascript:history.go(-1)"></a>
+			<h1>意见与反馈</h1>
+		</div>
+		<div class="feedback">
+			<form action="">
+				<div class="feedback-tit">
+					<span></span>
+					<h2>您的建议（必填）</h2>
+				</div>
+				<textarea name="" id="" cols="30" rows="10" placeholder="我们将虚心接受您的意见与反馈，请期待我们的改进！" onkeyup="checkLength(this);"></textarea>
+				<var id="chLeft">300</var>
+				<div class="feedback-tit">
+					<span></span>
+					<h2>您的联系方式（必填）</h2>
+				</div>
+				<input type="text" placeholder="请留下您的手机号或QQ号，以方便联系">
+				<input type="submit" value="提交建议"></input>
+			</form>
+		</div>
+	</div>
+	<script>
+		// 限定字数
+		function checkLength(which) {  
+			var maxChars = 300;  
+			if (which.value.length > maxChars)  
+			which.value = which.value.substring(0,maxChars);  
+			var curr = maxChars - which.value.length;  
+			document.getElementById("chLeft").innerHTML = curr.toString();  
+		} 
+	</script>
+</body>
+</html>

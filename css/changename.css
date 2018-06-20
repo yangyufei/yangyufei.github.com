@@ -1,0 +1,433 @@
+.changename {
+	width: 100%;
+	height: 100%;
+	padding: 1rem 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: white;
+}
+.changename input[type=text] {
+	width: 100%;
+	height: 3rem;
+	padding: 0 3%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.changename p {
+	font-size: 0.96rem;
+	color: #bebebe;
+	line-height: 2.6rem;
+}
+.changename input[type=submit] {
+	width: 100%;
+	height: 3rem;
+	border: none;
+	background: #b39851;
+	color: #fefefe;
+	text-align: center;
+	line-height: 3rem;
+	border-radius: 4px;
+	font-size: 1.11rem;
+}
+/*个人信息页*/
+.person {
+	width: 100%;
+	height: 100%;
+}
+.person li,
+.set li,
+.phone li {
+	padding: 0 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e8e8e8;
+	background: white;
+}
+.person-pic,
+.person-name,
+.person-sex,
+.person-birth,
+.person-addr,
+.person-write,
+.ppic li,
+.set li,
+.phone li {
+	height: 3.29rem;
+}
+.person li span {
+	float: left;
+	width: 1.42rem;
+	height: 3.29rem;
+	margin-right: 3%;
+}
+.person-pic span {
+	background: url(../images/p_pic.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.person-name span {
+	background: url(../images/p_name.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.person-sex span {
+	background: url(../images/p_sex.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.person-birth span {
+	background: url(../images/p_birth.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.person-addr span {
+	background: url(../images/p_address.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.person-write span {
+	background: url(../images/p_write.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.person-picmin {
+	float: right;
+	width: 2.5rem;
+	height: 3.29rem;
+	padding-top: .25rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.person-pic img {
+	border-radius: 50%;
+	border: 1px solid #e8e8e8;
+}
+.person li var,
+.set span,
+.phone label {
+	float: left;
+	line-height: 3.29rem;
+	color: #272727;
+	font-size: 0.89rem;
+}
+.person li i,
+.set i {
+	float: right;
+	width: 3%;
+	height: 3.29rem;
+	margin-left: 3%;
+	background: url(../images/more.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.person-name p {
+	float: right;
+	color: #b39851;
+	font-size: 1.04rem;
+	line-height: 3.29rem;
+}
+.psex {
+	float: right;
+	width: 30%;
+}
+.person-sex .psex span {
+	float: left;
+	width: 18%;
+	height: 3.29rem;
+	margin-right: 6%;
+	background: url(../images/boy.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.person-sex .psex .selectboy {
+	background: url(../images/selectboy.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.psex-boy var {
+	margin-right: 24%;
+}
+.psex var {
+	color: #272727;
+	font-size: 0.89rem;
+	line-height: 3.29rem;
+}
+.person input {
+	float: right;
+	border: none;
+	outline: none;
+	height: 3.1rem;
+	text-align: right;
+	color: #a1a1a1;
+	background: white;
+}
+.ppic {
+	display: none;
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	width: 100%;
+	padding: 0 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-top: 1px solid #e8e8e8;
+}
+.ppic li {
+	border-left: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+	text-align: center;
+	line-height: 3.29rem;
+}
+.ppic input[type=button] {
+	width: 100%;
+	height: 3.29rem;
+	margin-top: .8rem;
+	background: #b39851;
+	color: #fefefe;
+	font-size: 1.11rem;
+	text-align: center;
+	line-height: 3.29rem;
+	border-radius: 4px;
+}
+.person-write {
+	border-top: 1px solid #e8e8e8;
+	margin-top: .8rem;
+}
+/*生日*/
+.kbtn {
+	float: right;
+	line-height: 3.29rem;
+	color: #a1a1a1;
+}
+#yearwrapper ul li,
+#monthwrapper ul li,
+#daywrapper ul li {
+	padding: 0 !important;
+	border-bottom: 0 !important;
+	background: none;
+}
+
+/*个性签名*/
+.changename textarea {
+	width: 100%;
+	height: 9.08rem;
+	margin-bottom: 1rem;
+	resize: none;
+	padding: 0.58rem 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.fontlimit {
+	position: absolute;
+	top: 11.5rem;
+	right: 6%;
+	color: #bebebe;
+	font-size: 0.96rem;
+}
+
+/*设置页面*/
+.set strong {
+	float: right;
+	line-height: 3.29rem;
+	color: #b39851;
+	font-size: 0.92rem;
+}
+.set-footer {
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	width: 100%;
+}
+.setdelete {
+	display: block;
+	width: 92%;
+	height: 3.29rem;
+	margin: 0 auto;
+	background: #b39851;
+	color: #fefefe;
+	text-align: center;
+	line-height: 3.29rem;
+	border-radius: 4px;
+	font-size: 1.25rem;
+	border: none;
+	outline: none;
+}
+.set-footer p {
+	width: 100%;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 0.88rem;
+	color: #999;
+}
+
+/*账号管理页*/
+.set var {
+	float: right;
+	color: #bebebe;
+	font-size: 0.92rem;
+	line-height: 3.29rem;
+}
+.set .already {
+	color: #b39851;
+}
+
+/*绑定手机页*/
+.phone input {
+	width: 54%;
+	height: 3.2rem;
+	margin-left: 6%;
+	padding: 0 3%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 0;
+}
+.yanzhengma {
+	float: right;
+	width: 28%;
+	padding-top: .35rem;
+}
+.yanzhengma span {
+	display: block;
+	width: 100%;
+	height: 2.4rem;
+	border: 1px solid #b39851;
+	color: #b39851;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 2.4rem;
+	border-radius: 3px;
+}
+.phone form input[type=submit] {
+	display: block;
+	width: 92%;
+	height: 3.29rem;
+	margin: 1rem auto 0;
+	background: #b39851;
+	color: #fefefe;
+	font-size: 1.25rem;
+	border-radius: 4px;
+}
+/*谷歌下去除上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+/*火狐下去除上下箭头*/
+ input[type="number"]{-moz-appearance:textfield;}
+
+/*密码设置页*/
+.password-tip {
+	width: 100%;
+	height: 3rem;
+	padding: 0 7%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 3rem;
+	font-size: 0.96rem;
+	color: #999;
+}
+.password var {
+	float: right;
+	width: 8%;
+	height: 3.29rem;
+	background: url(../images/wordnosee.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.password .wordsee {
+	background: url(../images/wordsee.png) center center no-repeat;
+	background-size: 100% auto;
+}
+
+
+/*登录页*/
+.yanzhengma a {
+	float: right;
+	line-height: 3.29rem;
+	color: #b39851;
+	font-size: 0.96rem;
+}
+.log-tip {
+	width: 100%;
+	text-align: center;
+	font-size: 0.96rem;
+	color: #bebebe;
+	line-height: 3rem;
+}
+.log-tip a {
+	display: inline;
+	color: #b39851;
+}
+.log-footer {
+	position: absolute;
+	bottom: 3rem;
+	left: 0;
+	width: 100%;
+	padding: 0 7%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.log-footer a {
+	float: left;
+	width: 33.3%;
+}
+.log-footer a img {
+	display: block;
+	width: 54%;
+	margin: 0 auto;
+}
+.log-footer p {
+	width: 100%;
+	margin-bottom: 1.6rem;
+	text-align: center;
+	color: #666;
+	font-size: 1.08rem;
+	font-weight: bold;
+}
+.login-con {
+	position: relative;
+}
+.logindelete {
+	position: absolute;
+	display: block;
+	top: 2rem;
+	right: 6%;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: url(../images/mask_delete.png) center center no-repeat;
+	background-size: contain;
+}
+/*手机号注册*/
+.re-login {
+	position: absolute;
+	top: 0rem;
+	right: 4%;
+	width: 10%;
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+	color: #b39851;
+	background: white !important;
+}
+.xieyi {
+	width: 100%;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 0.96rem;
+	color: #bebebe;
+}
+
+/*资料修改*/
+.changeinfo {
+	width: 100%;
+	height: 16rem;
+	padding-top: 3rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.changeinfo img {
+	display: block;
+	width: 23%;
+	margin: 0 auto;
+}
+.changeinfo var {
+	display: block;
+	width: 100%;
+	margin-top: .5rem;
+	text-align: center;
+	color: #666;
+	font-size: 1.08rem;
+}

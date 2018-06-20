@@ -1,0 +1,56 @@
+1. index.html 首页（懒加载）
+
+2. find.html 发现页 (懒加载  顶部尾部窗口定位  没有返回按钮  获取marginBottom)
+
+3 11. mine.html 我的（尾部窗口定位）
+
+4 5. content.html 内容页 美食详情(顶部底部评论定位)  
+
+6. say.html 评论页
+
+7. news.html 消息页 （顶部定位）
+
+8. new-say.html 新的评论页
+
+9. notice.html 通知页
+
+10. collect.html 收藏页
+
+12. feedback.html 意见与反馈页
+
+13. person.html 个人信息页( 生日，地址选择 )
+
+14. changename.html 修改昵称页 （正则）
+
+15. write.html 个性签名页
+
+16. set.html 设置页
+
+17. magage.html 账号管理页
+
+18. phone.html 绑定手机页 （input值）
+
+19. password.html 密码设置页（修改input的type 点击密码可见）
+
+20. about.html 关于页
+
+21. login.html 登录页
+
+22. log.html 进入登录页
+
+23.proving.html 验证手机页
+
+24.changepass.html 修改密码页
+
+25. register.html 注册页
+
+26. phone_register.html 手机号注册页
+
+27. changeinfo.html 资料修改页
+
+2.2 theme.html 话题页
+
+28.buy_detail.html 购买详情
+
+1-2-3 detail.html 详情
+

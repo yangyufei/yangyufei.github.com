@@ -1,10 +1,10 @@
 ﻿@charset 'utf-8';
 /* CSS reset */
-html{color:#000;background:#FFF;font-family:Arial,'宋体';}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,strong{padding:0;margin:0;font-family:Arial,'宋体';}
+html{color:#000;background:#FFF;font-family:Microsoft Yahei,'微软雅黑';}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,strong{padding:0;margin:0;font-family:Microsoft Yahei,'微软雅黑';}
 table{border-collapse:collapse;border-spacing:0;}
 fieldset,img{border:0;}
-a{text-decoration:underline; color:#00c; outline:none;}/*此处待添加默认链接颜色*/
+a{text-decoration:none; color:#00c; outline:none;}/*此处待添加默认链接颜色*/
 var,em,strong{font-style:normal;}
 address,caption,cite,code,dfn,em,strong,th,var, optgroup{font-style:inherit;font-weight:inherit;}
 del,ins{text-decoration:none;}
@@ -16,7 +16,109 @@ abbr,acronym{border:0;font-variant:normal;}
 sup{vertical-align:baseline;}
 sub{vertical-align:baseline;}
 legend{color:#000;}
-input,button,textarea,select,optgroup,option{font-family:inherit; font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select,optgroup,option{font-family:inherit; font-size:inherit;font-style:inherit;font-weight:inherit;-webkit-appearance: none;outline: none;}
 input,button,textarea,select{*font-size:100%;}
 .clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
 .clearfix { *zoom:1; }
+
+html, body {width: 100%; height: 100%;}
+img{display: block; width: 100%;}
+a {display: block;}
+/*去除点击的黑色阴影*/
+*{-webkit-tap-highlight-color: transparent;}
+
+.footer {
+	position: fixed;
+	z-index: 99;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.67rem 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.7);
+}
+.footer li {
+	float: left;
+	width: 33.3%;
+	text-align: center;
+}
+.footer li span {
+	display: block;
+	width: 100%;
+	height: 1.25rem;
+	margin-top: .4rem;
+}
+.footer li var {
+	color: white;
+}
+.footer-index span {
+	background: url(../images/house1.png) center center no-repeat;
+	background-size: auto 100%;
+}
+.footer-index span.yellow {
+	background: url(../images/house2.png) center center no-repeat;
+	background-size: auto 100%;
+}
+.footer-find span {
+	background: url(../images/find1.png) center center no-repeat;
+	background-size: auto 100%;
+}
+.footer-find span.yellow {
+	background: url(../images/find2.png) center center no-repeat;
+	background-size: auto 100%;
+}
+.footer-mine span {
+	background: url(../images/mine1.png) center center no-repeat;
+	background-size: auto 100%;
+}
+.footer-mine span.yellow {
+	background: url(../images/mine2.png) center center no-repeat;
+	background-size: auto 100%;
+}
+.yellow, .footer var.yellow {
+	color: #b39851 !important;
+}
+/*顶部标题*/
+.new-wrap {
+	width: 100%;
+	height: 100%;
+	padding-top: 3rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #f8f8f8;
+}
+.con-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	height: 3rem;
+	border-bottom: 1px solid #f1f1f1;
+	background: white;
+}
+.con-top a,
+.con-top h1 {
+	float: left;
+}
+.con-top a {
+	width: 12%;
+	height: 3rem;
+	background: url(../images/before.png) center center no-repeat;
+	background-size: 28% auto;
+}
+.con-top h1 {
+	width: 88%;
+	padding-right: 12%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 3rem;
+	color: #272727;
+	font-size: 1.11rem;
+	font-weight: bold;
+}
+.new-wrap .buttonselect {
+	background: #8f7a41 !important;
+}

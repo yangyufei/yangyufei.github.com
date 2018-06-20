@@ -1,0 +1,110 @@
+@charset "utf-8";
+.load {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.load img {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.load-con {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.load-con .logo {
+	display: block;
+	width: 25%;
+	margin: 2.75rem auto 0;
+}
+.load-con .logo-font {
+	display: block;
+	width: 23%;
+	margin: 0.67rem auto 2.5rem;
+}
+.load-con .font {
+	display: block;
+	width: 56%;
+	margin: 0 auto 3.92rem;
+}
+.load-con a {
+	display: block;
+	width: 58%;
+	height: 2.9rem;
+	margin: 0 auto 1.67rem;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	background: rgba(255, 255, 255, .2);
+	color: white;
+	text-decoration: none;
+}
+.load-con a div {
+	width: 74%;
+	height: 2.9rem;
+	margin: 0 auto;
+}
+.load-con a div span {
+	float: left;
+	width: 14%;
+	height: 2.9rem;
+}
+.android div span {
+	background: url(../images/load/android.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.ios div span {
+	background: url(../images/load/ios.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.load-con a div var {
+	float: right;
+	line-height: 2.9rem;
+	font-size: 1rem;
+}
+.load-con p {
+	width: 73%;
+	margin: 1.5rem auto 0;
+	font-size: 1rem;
+	color: white;
+}
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+/* 兼容iphone4/4s */
+	.load-con .logo {
+		margin: 1.1rem auto 0;
+	}
+	.load-con .logo-font {
+		margin: 0.47rem auto 1.1rem;
+	}
+	.load-con .font {
+		margin: 0 auto 1.1rem;
+	}
+	.load-con a {
+		margin: 0 auto .9rem;
+	}
+	.load-con p {
+		font-size: 0.9rem !important;
+		margin: .5rem auto 0;
+	}
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+	/* 兼容iphone5 */
+	.load-con .logo {
+		margin: 1.5rem auto 0;
+	}
+	.load-con .logo-font {
+		margin: 0.57rem auto 1.5rem;
+	}
+	.load-con .font {
+		margin: 0 auto 1.5rem;
+	}
+	.load-con a {
+		margin: 0 auto 1.2rem;
+	}
+	.load-con p {
+		margin: .9rem auto 0;
+	}
+}

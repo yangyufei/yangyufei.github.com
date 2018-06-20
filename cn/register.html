@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>手机号注册</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/changename.css">
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/password.js"></script>
+</head>
+<body>
+	<div class="new-wrap">
+		<div class="con-top clearfix">
+			<a href="javascript:history.go(-1)"></a>
+			<h1>手机号注册</h1>
+			<a href="" class="re-login">登录</a>
+		</div>
+		<div class="phone">
+			<form action="">
+				<ul class="password">
+					<li class="clearfix">
+						<input type="text" id="num" placeholder="请输入手机号" style="margin-left: 0;width: 70%;">
+					</li>
+				</ul>
+				<div>
+					<input type="submit" value="下一步">
+				</div>
+			</form>
+			<p class="xieyi">注册即表示您已同意《用户协议》</p>
+		</div>
+	</div>
+	<script>
+		// 手机号正则
+		$("#num").on("blur",function(){
+			var tel = $(this).val();
+			var reg = /^1\d{10}$/gi;
+			if(reg.test(tel)) {
+			    $(this).css({
+			         "color": "black"
+			    })
+			} else {
+			    $(this).css({
+			         "color": "red"
+			    })
+			    alert("请输入正确的手机号");
+			}
+		})
+	</script>
+</body>
+</html>

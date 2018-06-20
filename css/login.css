@@ -1,0 +1,65 @@
+.login {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.login-con {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+.login-center {
+	position: absolute;
+	bottom: 3rem;
+	left: 0;
+	width: 100%;
+}
+.logina {
+	display: block;
+	width: 73%;
+	height: 2.75rem;
+	margin: 0 auto 1rem;
+	border: 1px solid #b1b0ae;
+	text-align: center;
+	line-height: 2.75rem;
+	color: white;
+	font-size: 1.11rem;
+	border-radius: 4px;
+}
+.login-center .white {
+	background: rgba(255, 255, 255, .3);
+}
+.login-center p {
+	width: 100%;
+	margin: 3rem 0 2rem;
+	font-size: 0.96rem;
+	color: #fff;
+	text-align: center;
+}
+.login ul {
+	padding: 0 7%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.login-con li {
+	float: left;
+	width: 33.3%;
+}
+.login-con li a {
+	display: block;
+	width: 54%;
+	margin: 0 auto;
+}
+.logindelete {
+	position: absolute;
+	display: block;
+	top: 2rem;
+	right: 6%;
+	width: 2rem;
+	height: 2rem;
+	background: url(../images/mask_delete.png) center center no-repeat;
+	background-size: contain;
+}

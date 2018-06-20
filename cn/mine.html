@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/mine.css">
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+<body>
+	<div class="mine-wrap">
+		<div class="mine-top">
+			<div class="mine-set">
+				<a href="set.html"></a>
+			</div>
+			<a href="person.html">
+				<img src="../images/demo/mine_pic.png" alt="">
+			</a>
+			<h1>Simon</h1>
+			<p>唯有美食与爱不可辜负。</p>
+		</div>
+		<div class="mine-con">
+			<ul>
+				<li class="my-collection">
+					<a href="collect.html">
+						<span></span>
+						<var>我的收藏</var>
+						<i></i>
+					</a>
+				</li>
+				<li class="my-message">
+					<a href="news.html">
+						<span></span>
+						<var>我的消息</var>
+						<i></i>
+						<strong><b>1</b>条未读</strong>
+					</a>
+				</li>
+				<li class="my-friend">
+					<a href="javascript:;">
+						<span></span>
+						<var>推荐给朋友</var>
+						<i></i>
+					</a>
+				</li>
+				<li class="my-opinion">
+					<a href="feedback.html">
+						<span></span>
+						<var>意见反馈</var>
+						<i></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<ul class="clearfix">
+				<li class="footer-index">
+					<a href="../index.html">
+						<span></span>
+						<var>首页</var>
+					</a>
+				</li>
+				<li class="footer-find">
+					<a href="find.html">
+						<span></span>
+						<var>发现</var>
+					</a>
+				</li>
+				<li class="footer-mine">
+					<a href="mine.html">
+						<span></span>
+						<var>我的</var>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 分享遮罩层 -->
+	<div class="mask">
+		<div class="mask-con bdsharebuttonbox" id="share">
+			<ul class="clearfix">
+				<li>
+					<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">
+					</a>
+					<var>朋友圈</var>
+				</li>
+				<li>
+					<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">
+					</a>
+					<var>微信好友</var>
+				</li>
+				<li>
+					<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">
+					</a>
+					<var>新浪微博</var>
+				</li>
+				<li>
+					<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">
+					</a>
+					<var>QQ空间</var>
+				</li>
+				<li>
+					<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">
+					</a>
+					<var>QQ好友</var>
+				</li>
+				<li>
+					<a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址">
+					</a>
+					<var>复制链接</var>
+				</li>
+			</ul>
+			<div class="mask-delete"></div>
+		</div>
+	</div>
+	<script>
+		webReady(2);
+		$(".my-friend").click(function(){
+			$(".mask").show();
+		})
+		$(".mask-delete").click(function(){
+			$(".mask").hide();
+		})
+		window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","weixin","sqq","copy"],"viewText":"分享到：","viewSize":"32"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","weixin","sqq","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+	</script>
+</body>
+</html>

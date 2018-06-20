@@ -1,0 +1,68 @@
+.feedback {
+	width: 100%;
+	height: 100%;
+	padding: 0 4%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: white;
+}
+.feedback-tit {
+	width: 100%;
+	height: 3.25rem;
+}
+.feedback-tit span, .feedback-tit h2 {
+	float: left;
+}
+.feedback-tit span {
+	width: 1.13rem;
+	height: 3.25rem;
+	margin-right: 4%;
+	background: url(../images/library.png) center center no-repeat;
+	background-size: 100% auto;
+}
+.feedback-tit h2 {
+	line-height: 3.25rem;
+	font-size: 1.04rem;
+	color: #272727;
+	font-weight: bold;
+}
+.feedback textarea {
+	position: relative;
+	width: 100%;
+	height: 8.17rem;
+	padding: 0.67rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	resize: none;
+	border-radius: 4px;
+	outline: none;
+}
+.feedback var {
+	position: absolute;
+	top: 13rem;
+	right: 6.6%;
+	color: #bebebe;
+	font-size: 0.85rem;
+}
+.feedback input {
+	width: 100%;
+	height: 3rem;
+	padding: 0 0.67rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: none;
+}
+.feedback input[type=submit] {
+	width: 100%;
+	height: 2.92rem;
+	margin-top: 1rem;
+	border: none;
+	background: #b39851;
+	color: white;
+	font-size: 1.11rem;
+	text-align: center;
+	line-height: 2.92rem;
+	border-radius: 4px;
+}
+

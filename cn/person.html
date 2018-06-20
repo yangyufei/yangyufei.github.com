@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>个人信息</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/changename.css">
+	<!-- 地址 -->
+	<link rel="stylesheet" href="../css/LArea.css">
+	<!-- 日期 -->
+	<link href="../css/common.css" rel="stylesheet" type="text/css" />
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/person.js"></script>
+	<!-- 日期 -->
+	<script type="text/javascript" src="../js/date.js" ></script>
+	<script type="text/javascript" src="../js/iscroll.js" ></script>
+	<!-- 地址 -->
+	<script src="../js/address/LAreaData1.js"></script>
+    <script src="../js/address/LAreaData2.js"></script>
+    <script src="../js/address/LArea.js"></script>
+</head>
+<body>
+	<div class="new-wrap">
+		<div class="con-top clearfix">
+			<a href="javascript:history.go(-1)"></a>
+			<h1>个人信息</h1>
+		</div>
+		<div class="person">
+			<ul>
+				<li class="person-pic">
+					<a href="#" class="clearfix">
+						<span></span>
+						<var>头像</var>
+						<i></i>
+						<div class="person-picmin">
+							<img src="../images/demo/mine_pic.png" alt="">
+						</div>
+					</a>
+				</li>
+				<li class="person-name">
+					<a href="changeinfo.html" class="clearfix">
+						<span></span>
+						<var>昵称</var>
+						<i></i>
+						<p>WUOOOO</p>
+					</a>
+				</li>
+				<li class="person-sex">
+					<a href="#" class="clearfix">
+						<span></span>
+						<var>性别</var>
+						<div class="psex">
+							<div class="psex-boy">
+								<span class="selectboy"></span>
+								<var>男</var>
+							</div>
+							<div class="psex-girl">
+								<span></span>
+								<var>女</var>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="person-birth">
+					<a href="#" class="clearfix">
+						<span></span>
+						<var>生日</var>
+						<i></i>
+						<div id="beginTime" class="kbtn">未设置</div>
+					<div id="datePlugin"></div>
+					</a>
+				</li>
+				<li class="person-addr">
+					<a href="#" class="clearfix">
+						<span></span>
+						<var>长居地</var>
+						<i></i>
+						<div class="demo-content">
+				        <div class="content-block" style="display:none;">
+				            <input id="demo1" type="text" readonly="" name="input_date" placeholder="城市选择特效"/>
+				            <input id="value1" type="hidden" name="input_date"/>
+				        </div>
+				        <div class="content-block">
+				            <input id="demo2" type="text" readonly="" name="input_date" placeholder="常居住地址"/ style="width: 69%;">
+				            <input id="value2" type="hidden" name="input_date"/>
+				        </div>
+				    </div>
+					</a>
+				</li>
+				<li class="person-write">
+					<a href="write.html" class="clearfix">
+						<span></span>
+						<var>个性签名</var>
+						<i></i>
+						<input type="text" placeholder="点此设置你的签名" disabled="disabled">
+					</a>
+				</li>
+			</ul>
+			<div class="ppic">
+				<ul>
+					<li>请选择头像</li>
+					<li>拍照</li>
+					<li>
+						<label for="pic">本地相册</label>
+						<input type="file" id="pic" style="display: none;">
+					</li>
+				</ul>
+				<input type="button" value="取消">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

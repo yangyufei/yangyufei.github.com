@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>登录</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+<body>
+	<div class="login">
+		<img src="../images/demo/login.png" alt="">
+		<div class="login-con">
+			<a href="javascript:history.go(-1)" class="logindelete"></a>
+			<div class="login-center">
+				<a class="logina" href="">登录</a>
+				<a class="logina" href="">注册</a>
+				<p>其他登录方式</p>
+				<ul class="clearfix">
+					<li>
+						<a href="">
+							<img src="../images/weixin.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="../images/weibo.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="../images/chat.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(".logina").on("touchstart",function(){
+			$(this).addClass("white");
+		})
+		$(".logina").on("touchend",function(){
+			$(this).removeClass("white");
+		})
+	</script>
+</body>
+</html>
