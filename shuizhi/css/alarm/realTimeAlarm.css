@@ -1,0 +1,251 @@
+.boxsizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.realAlarm,
+.historyAlarm,
+.messageAlarm {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.realAlarmSelectCon,
+.historyAlarmSelectCon {
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.realAlarmSelectCon > div,
+.historyAlarmSelectCon > div {
+  margin-bottom: 20px;
+}
+.realAlarmSelectCon > div > div,
+.historyAlarmSelectCon > div > div {
+  float: left;
+  margin-right: 6%;
+}
+.realAlarmSelectCon > div > div label,
+.historyAlarmSelectCon > div > div label {
+  float: left;
+  color: #555;
+  line-height: 40px;
+}
+.realAlarmSelectCon > div > div p,
+.historyAlarmSelectCon > div > div p,
+.realAlarmSelectCon > div > div input,
+.historyAlarmSelectCon > div > div input {
+  float: left;
+  width: 230px;
+  height: 40px;
+  border-radius: 4px;
+}
+.realAlarmSelectCon > div > label,
+.historyAlarmSelectCon > div > label {
+  float: left;
+}
+.realAlarmSelectCon > div > ul,
+.historyAlarmSelectCon > div > ul {
+  float: left;
+}
+.realAlarmSelectCon > div > ul > li,
+.historyAlarmSelectCon > div > ul > li {
+  float: left;
+}
+.realAlarmSelectCon > div .alarmSearch,
+.historyAlarmSelectCon > div .alarmSearch,
+.realAlarmSelectCon > div .historySearch,
+.historyAlarmSelectCon > div .historySearch {
+  float: right;
+}
+.realAlarmSelectCon > div:last-child,
+.historyAlarmSelectCon > div:last-child {
+  margin-bottom: 0;
+}
+.realAlarmListCon,
+.historyAlarmListCon,
+.messageAlarmListCon {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.realAlarmListCon td a,
+.historyAlarmListCon td a,
+.messageAlarmListCon td a {
+  color: #2eadfc;
+}
+.outDataDiv {
+  float: right;
+  padding-top: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.outDataDiv a {
+  float: right;
+  width: 114px;
+  height: 34px;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 34px;
+}
+.outDataDiv a span {
+  float: left;
+  width: 20px;
+  height: 30px;
+  background: url(../../img/outData.png) center center no-repeat;
+}
+.messageAlarmSelectCon {
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.messageAlarmSelectCon > div {
+  float: left;
+}
+.messageAlarmSelectCon > div label {
+  float: left;
+  color: #555;
+  line-height: 40px;
+}
+.messageAlarmSelectCon > div input {
+  float: left;
+  width: 230px;
+  height: 40px;
+  margin-right: 30px;
+  border-radius: 4px;
+}
+.editRule > div,
+.addRule > div {
+  padding: 16px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px dashed #dcdcdc;
+}
+.editRule > div input,
+.addRule > div input {
+  width: 400px;
+  height: 40px;
+  border-radius: 4px;
+}
+.editRule > div h3,
+.addRule > div h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #333;
+}
+.editRule > div .messagePeople var,
+.addRule > div .messagePeople var {
+  font-size: 18px;
+  color: #333;
+  line-height: 40px;
+}
+.editRule > div .messagePeople .selectFromOrg,
+.addRule > div .messagePeople .selectFromOrg,
+.editRule > div .messagePeople .addselectFromOrg,
+.addRule > div .messagePeople .addselectFromOrg {
+  line-height: 40px;
+  color: #30b0fd;
+  font-size: 14px;
+}
+.editRule > div .messagePeople .addPeople,
+.addRule > div .messagePeople .addPeople,
+.editRule > div .messagePeople .addaddPeople,
+.addRule > div .messagePeople .addaddPeople {
+  float: right;
+}
+.editRule > div ul,
+.addRule > div ul {
+  width: 600px;
+}
+.editRule > div ul li,
+.addRule > div ul li {
+  float: left;
+  width: 33%;
+  margin-bottom: 14px;
+}
+.editRule > div ul li label,
+.addRule > div ul li label {
+  padding-left: 30px !important;
+  margin-right: 0 !important;
+}
+.editRule > div > div,
+.addRule > div > div {
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+.editRule > div > div input,
+.addRule > div > div input {
+  border: 0;
+}
+.editRule > div ol,
+.addRule > div ol {
+  overflow: auto;
+  max-height: 300px;
+}
+.editRule > div ol li,
+.addRule > div ol li {
+  position: relative;
+  padding-top: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px dashed #ddd;
+}
+.editRule > div ol li > div,
+.addRule > div ol li > div {
+  margin-bottom: 12px;
+}
+.editRule > div ol li > div label,
+.addRule > div ol li > div label {
+  line-height: 40px;
+}
+.editRule > div ol li > div input,
+.addRule > div ol li > div input {
+  width: 214px;
+  height: 40px;
+  border-radius: 4px;
+}
+.editRule > div ol li > div span,
+.addRule > div ol li > div span {
+  position: absolute;
+  top: 12px;
+  left: 312px;
+  width: 17px;
+  height: 40px;
+  background: url(../../img/del.png) center center no-repeat;
+  cursor: pointer;
+}
+.ui-dialog-body {
+  text-align: left !important;
+}

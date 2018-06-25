@@ -1,0 +1,494 @@
+.boxsizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.equipInfoCon,
+.instrumentCon,
+.videoCon {
+  padding: 14px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.addNew h3,
+.monitorData > div h3,
+.editmonitorData > div h3,
+.editEquip h3,
+.editInstrument h3,
+.editInstrumentPara h3,
+.addInstrument h3,
+.addInstrumentPara h3,
+.addVideo h3,
+.addVideoPara h3,
+.editVideo h3,
+.editVideoPara h3 {
+  font-size: 18px;
+  color: #333;
+}
+.addNew h3,
+.editEquip h3,
+.editInstrument h3,
+.addInstrument h3,
+.addVideo h3,
+.addVideoPara h3,
+.editVideo h3,
+.editVideoPara h3 {
+  margin-bottom: 16px;
+}
+.addNew .equip-info li,
+.editEquip .equip-info li,
+.editInstrument .equip-info li,
+.addInstrument .equip-info li,
+.addVideo .equip-info li,
+.addVideoPara .equip-info li,
+.editVideo .equip-info li,
+.editVideoPara .equip-info li,
+.addNew .editInstrument-info li,
+.editEquip .editInstrument-info li,
+.editInstrument .editInstrument-info li,
+.addInstrument .editInstrument-info li,
+.addVideo .editInstrument-info li,
+.addVideoPara .editInstrument-info li,
+.editVideo .editInstrument-info li,
+.editVideoPara .editInstrument-info li,
+.addNew .addInstrument-info li,
+.editEquip .addInstrument-info li,
+.editInstrument .addInstrument-info li,
+.addInstrument .addInstrument-info li,
+.addVideo .addInstrument-info li,
+.addVideoPara .addInstrument-info li,
+.editVideo .addInstrument-info li,
+.editVideoPara .addInstrument-info li,
+.addNew .addVideo-info li,
+.editEquip .addVideo-info li,
+.editInstrument .addVideo-info li,
+.addInstrument .addVideo-info li,
+.addVideo .addVideo-info li,
+.addVideoPara .addVideo-info li,
+.editVideo .addVideo-info li,
+.editVideoPara .addVideo-info li,
+.addNew .addVideoPara-info li,
+.editEquip .addVideoPara-info li,
+.editInstrument .addVideoPara-info li,
+.addInstrument .addVideoPara-info li,
+.addVideo .addVideoPara-info li,
+.addVideoPara .addVideoPara-info li,
+.editVideo .addVideoPara-info li,
+.editVideoPara .addVideoPara-info li,
+.addNew .editVideo-info li,
+.editEquip .editVideo-info li,
+.editInstrument .editVideo-info li,
+.addInstrument .editVideo-info li,
+.addVideo .editVideo-info li,
+.addVideoPara .editVideo-info li,
+.editVideo .editVideo-info li,
+.editVideoPara .editVideo-info li,
+.addNew .editVideoPara-info li,
+.editEquip .editVideoPara-info li,
+.editInstrument .editVideoPara-info li,
+.addInstrument .editVideoPara-info li,
+.addVideo .editVideoPara-info li,
+.addVideoPara .editVideoPara-info li,
+.editVideo .editVideoPara-info li,
+.editVideoPara .editVideoPara-info li {
+  margin-bottom: 20px;
+}
+.addNew .equip-info li > div,
+.editEquip .equip-info li > div,
+.editInstrument .equip-info li > div,
+.addInstrument .equip-info li > div,
+.addVideo .equip-info li > div,
+.addVideoPara .equip-info li > div,
+.editVideo .equip-info li > div,
+.editVideoPara .equip-info li > div,
+.addNew .editInstrument-info li > div,
+.editEquip .editInstrument-info li > div,
+.editInstrument .editInstrument-info li > div,
+.addInstrument .editInstrument-info li > div,
+.addVideo .editInstrument-info li > div,
+.addVideoPara .editInstrument-info li > div,
+.editVideo .editInstrument-info li > div,
+.editVideoPara .editInstrument-info li > div,
+.addNew .addInstrument-info li > div,
+.editEquip .addInstrument-info li > div,
+.editInstrument .addInstrument-info li > div,
+.addInstrument .addInstrument-info li > div,
+.addVideo .addInstrument-info li > div,
+.addVideoPara .addInstrument-info li > div,
+.editVideo .addInstrument-info li > div,
+.editVideoPara .addInstrument-info li > div,
+.addNew .addVideo-info li > div,
+.editEquip .addVideo-info li > div,
+.editInstrument .addVideo-info li > div,
+.addInstrument .addVideo-info li > div,
+.addVideo .addVideo-info li > div,
+.addVideoPara .addVideo-info li > div,
+.editVideo .addVideo-info li > div,
+.editVideoPara .addVideo-info li > div,
+.addNew .addVideoPara-info li > div,
+.editEquip .addVideoPara-info li > div,
+.editInstrument .addVideoPara-info li > div,
+.addInstrument .addVideoPara-info li > div,
+.addVideo .addVideoPara-info li > div,
+.addVideoPara .addVideoPara-info li > div,
+.editVideo .addVideoPara-info li > div,
+.editVideoPara .addVideoPara-info li > div,
+.addNew .editVideo-info li > div,
+.editEquip .editVideo-info li > div,
+.editInstrument .editVideo-info li > div,
+.addInstrument .editVideo-info li > div,
+.addVideo .editVideo-info li > div,
+.addVideoPara .editVideo-info li > div,
+.editVideo .editVideo-info li > div,
+.editVideoPara .editVideo-info li > div,
+.addNew .editVideoPara-info li > div,
+.editEquip .editVideoPara-info li > div,
+.editInstrument .editVideoPara-info li > div,
+.addInstrument .editVideoPara-info li > div,
+.addVideo .editVideoPara-info li > div,
+.addVideoPara .editVideoPara-info li > div,
+.editVideo .editVideoPara-info li > div,
+.editVideoPara .editVideoPara-info li > div {
+  float: left;
+  margin-right: 30px;
+}
+.addNew .equip-info li > div label,
+.editEquip .equip-info li > div label,
+.editInstrument .equip-info li > div label,
+.addInstrument .equip-info li > div label,
+.addVideo .equip-info li > div label,
+.addVideoPara .equip-info li > div label,
+.editVideo .equip-info li > div label,
+.editVideoPara .equip-info li > div label,
+.addNew .editInstrument-info li > div label,
+.editEquip .editInstrument-info li > div label,
+.editInstrument .editInstrument-info li > div label,
+.addInstrument .editInstrument-info li > div label,
+.addVideo .editInstrument-info li > div label,
+.addVideoPara .editInstrument-info li > div label,
+.editVideo .editInstrument-info li > div label,
+.editVideoPara .editInstrument-info li > div label,
+.addNew .addInstrument-info li > div label,
+.editEquip .addInstrument-info li > div label,
+.editInstrument .addInstrument-info li > div label,
+.addInstrument .addInstrument-info li > div label,
+.addVideo .addInstrument-info li > div label,
+.addVideoPara .addInstrument-info li > div label,
+.editVideo .addInstrument-info li > div label,
+.editVideoPara .addInstrument-info li > div label,
+.addNew .addVideo-info li > div label,
+.editEquip .addVideo-info li > div label,
+.editInstrument .addVideo-info li > div label,
+.addInstrument .addVideo-info li > div label,
+.addVideo .addVideo-info li > div label,
+.addVideoPara .addVideo-info li > div label,
+.editVideo .addVideo-info li > div label,
+.editVideoPara .addVideo-info li > div label,
+.addNew .addVideoPara-info li > div label,
+.editEquip .addVideoPara-info li > div label,
+.editInstrument .addVideoPara-info li > div label,
+.addInstrument .addVideoPara-info li > div label,
+.addVideo .addVideoPara-info li > div label,
+.addVideoPara .addVideoPara-info li > div label,
+.editVideo .addVideoPara-info li > div label,
+.editVideoPara .addVideoPara-info li > div label,
+.addNew .editVideo-info li > div label,
+.editEquip .editVideo-info li > div label,
+.editInstrument .editVideo-info li > div label,
+.addInstrument .editVideo-info li > div label,
+.addVideo .editVideo-info li > div label,
+.addVideoPara .editVideo-info li > div label,
+.editVideo .editVideo-info li > div label,
+.editVideoPara .editVideo-info li > div label,
+.addNew .editVideoPara-info li > div label,
+.editEquip .editVideoPara-info li > div label,
+.editInstrument .editVideoPara-info li > div label,
+.addInstrument .editVideoPara-info li > div label,
+.addVideo .editVideoPara-info li > div label,
+.addVideoPara .editVideoPara-info li > div label,
+.editVideo .editVideoPara-info li > div label,
+.editVideoPara .editVideoPara-info li > div label {
+  float: left;
+  color: #666;
+  line-height: 40px;
+}
+.addNew .equip-info li > div input,
+.editEquip .equip-info li > div input,
+.editInstrument .equip-info li > div input,
+.addInstrument .equip-info li > div input,
+.addVideo .equip-info li > div input,
+.addVideoPara .equip-info li > div input,
+.editVideo .equip-info li > div input,
+.editVideoPara .equip-info li > div input,
+.addNew .editInstrument-info li > div input,
+.editEquip .editInstrument-info li > div input,
+.editInstrument .editInstrument-info li > div input,
+.addInstrument .editInstrument-info li > div input,
+.addVideo .editInstrument-info li > div input,
+.addVideoPara .editInstrument-info li > div input,
+.editVideo .editInstrument-info li > div input,
+.editVideoPara .editInstrument-info li > div input,
+.addNew .addInstrument-info li > div input,
+.editEquip .addInstrument-info li > div input,
+.editInstrument .addInstrument-info li > div input,
+.addInstrument .addInstrument-info li > div input,
+.addVideo .addInstrument-info li > div input,
+.addVideoPara .addInstrument-info li > div input,
+.editVideo .addInstrument-info li > div input,
+.editVideoPara .addInstrument-info li > div input,
+.addNew .addVideo-info li > div input,
+.editEquip .addVideo-info li > div input,
+.editInstrument .addVideo-info li > div input,
+.addInstrument .addVideo-info li > div input,
+.addVideo .addVideo-info li > div input,
+.addVideoPara .addVideo-info li > div input,
+.editVideo .addVideo-info li > div input,
+.editVideoPara .addVideo-info li > div input,
+.addNew .addVideoPara-info li > div input,
+.editEquip .addVideoPara-info li > div input,
+.editInstrument .addVideoPara-info li > div input,
+.addInstrument .addVideoPara-info li > div input,
+.addVideo .addVideoPara-info li > div input,
+.addVideoPara .addVideoPara-info li > div input,
+.editVideo .addVideoPara-info li > div input,
+.editVideoPara .addVideoPara-info li > div input,
+.addNew .editVideo-info li > div input,
+.editEquip .editVideo-info li > div input,
+.editInstrument .editVideo-info li > div input,
+.addInstrument .editVideo-info li > div input,
+.addVideo .editVideo-info li > div input,
+.addVideoPara .editVideo-info li > div input,
+.editVideo .editVideo-info li > div input,
+.editVideoPara .editVideo-info li > div input,
+.addNew .editVideoPara-info li > div input,
+.editEquip .editVideoPara-info li > div input,
+.editInstrument .editVideoPara-info li > div input,
+.addInstrument .editVideoPara-info li > div input,
+.addVideo .editVideoPara-info li > div input,
+.addVideoPara .editVideoPara-info li > div input,
+.editVideo .editVideoPara-info li > div input,
+.editVideoPara .editVideoPara-info li > div input,
+.addNew .equip-info li > div p,
+.editEquip .equip-info li > div p,
+.editInstrument .equip-info li > div p,
+.addInstrument .equip-info li > div p,
+.addVideo .equip-info li > div p,
+.addVideoPara .equip-info li > div p,
+.editVideo .equip-info li > div p,
+.editVideoPara .equip-info li > div p,
+.addNew .editInstrument-info li > div p,
+.editEquip .editInstrument-info li > div p,
+.editInstrument .editInstrument-info li > div p,
+.addInstrument .editInstrument-info li > div p,
+.addVideo .editInstrument-info li > div p,
+.addVideoPara .editInstrument-info li > div p,
+.editVideo .editInstrument-info li > div p,
+.editVideoPara .editInstrument-info li > div p,
+.addNew .addInstrument-info li > div p,
+.editEquip .addInstrument-info li > div p,
+.editInstrument .addInstrument-info li > div p,
+.addInstrument .addInstrument-info li > div p,
+.addVideo .addInstrument-info li > div p,
+.addVideoPara .addInstrument-info li > div p,
+.editVideo .addInstrument-info li > div p,
+.editVideoPara .addInstrument-info li > div p,
+.addNew .addVideo-info li > div p,
+.editEquip .addVideo-info li > div p,
+.editInstrument .addVideo-info li > div p,
+.addInstrument .addVideo-info li > div p,
+.addVideo .addVideo-info li > div p,
+.addVideoPara .addVideo-info li > div p,
+.editVideo .addVideo-info li > div p,
+.editVideoPara .addVideo-info li > div p,
+.addNew .addVideoPara-info li > div p,
+.editEquip .addVideoPara-info li > div p,
+.editInstrument .addVideoPara-info li > div p,
+.addInstrument .addVideoPara-info li > div p,
+.addVideo .addVideoPara-info li > div p,
+.addVideoPara .addVideoPara-info li > div p,
+.editVideo .addVideoPara-info li > div p,
+.editVideoPara .addVideoPara-info li > div p,
+.addNew .editVideo-info li > div p,
+.editEquip .editVideo-info li > div p,
+.editInstrument .editVideo-info li > div p,
+.addInstrument .editVideo-info li > div p,
+.addVideo .editVideo-info li > div p,
+.addVideoPara .editVideo-info li > div p,
+.editVideo .editVideo-info li > div p,
+.editVideoPara .editVideo-info li > div p,
+.addNew .editVideoPara-info li > div p,
+.editEquip .editVideoPara-info li > div p,
+.editInstrument .editVideoPara-info li > div p,
+.addInstrument .editVideoPara-info li > div p,
+.addVideo .editVideoPara-info li > div p,
+.addVideoPara .editVideoPara-info li > div p,
+.editVideo .editVideoPara-info li > div p,
+.editVideoPara .editVideoPara-info li > div p {
+  float: left;
+  width: 178px;
+  height: 40px;
+  border-radius: 4px;
+}
+.addNew .equip-info li > div:nth-child(3),
+.editEquip .equip-info li > div:nth-child(3),
+.editInstrument .equip-info li > div:nth-child(3),
+.addInstrument .equip-info li > div:nth-child(3),
+.addVideo .equip-info li > div:nth-child(3),
+.addVideoPara .equip-info li > div:nth-child(3),
+.editVideo .equip-info li > div:nth-child(3),
+.editVideoPara .equip-info li > div:nth-child(3),
+.addNew .editInstrument-info li > div:nth-child(3),
+.editEquip .editInstrument-info li > div:nth-child(3),
+.editInstrument .editInstrument-info li > div:nth-child(3),
+.addInstrument .editInstrument-info li > div:nth-child(3),
+.addVideo .editInstrument-info li > div:nth-child(3),
+.addVideoPara .editInstrument-info li > div:nth-child(3),
+.editVideo .editInstrument-info li > div:nth-child(3),
+.editVideoPara .editInstrument-info li > div:nth-child(3),
+.addNew .addInstrument-info li > div:nth-child(3),
+.editEquip .addInstrument-info li > div:nth-child(3),
+.editInstrument .addInstrument-info li > div:nth-child(3),
+.addInstrument .addInstrument-info li > div:nth-child(3),
+.addVideo .addInstrument-info li > div:nth-child(3),
+.addVideoPara .addInstrument-info li > div:nth-child(3),
+.editVideo .addInstrument-info li > div:nth-child(3),
+.editVideoPara .addInstrument-info li > div:nth-child(3),
+.addNew .addVideo-info li > div:nth-child(3),
+.editEquip .addVideo-info li > div:nth-child(3),
+.editInstrument .addVideo-info li > div:nth-child(3),
+.addInstrument .addVideo-info li > div:nth-child(3),
+.addVideo .addVideo-info li > div:nth-child(3),
+.addVideoPara .addVideo-info li > div:nth-child(3),
+.editVideo .addVideo-info li > div:nth-child(3),
+.editVideoPara .addVideo-info li > div:nth-child(3),
+.addNew .addVideoPara-info li > div:nth-child(3),
+.editEquip .addVideoPara-info li > div:nth-child(3),
+.editInstrument .addVideoPara-info li > div:nth-child(3),
+.addInstrument .addVideoPara-info li > div:nth-child(3),
+.addVideo .addVideoPara-info li > div:nth-child(3),
+.addVideoPara .addVideoPara-info li > div:nth-child(3),
+.editVideo .addVideoPara-info li > div:nth-child(3),
+.editVideoPara .addVideoPara-info li > div:nth-child(3),
+.addNew .editVideo-info li > div:nth-child(3),
+.editEquip .editVideo-info li > div:nth-child(3),
+.editInstrument .editVideo-info li > div:nth-child(3),
+.addInstrument .editVideo-info li > div:nth-child(3),
+.addVideo .editVideo-info li > div:nth-child(3),
+.addVideoPara .editVideo-info li > div:nth-child(3),
+.editVideo .editVideo-info li > div:nth-child(3),
+.editVideoPara .editVideo-info li > div:nth-child(3),
+.addNew .editVideoPara-info li > div:nth-child(3),
+.editEquip .editVideoPara-info li > div:nth-child(3),
+.editInstrument .editVideoPara-info li > div:nth-child(3),
+.addInstrument .editVideoPara-info li > div:nth-child(3),
+.addVideo .editVideoPara-info li > div:nth-child(3),
+.addVideoPara .editVideoPara-info li > div:nth-child(3),
+.editVideo .editVideoPara-info li > div:nth-child(3),
+.editVideoPara .editVideoPara-info li > div:nth-child(3) {
+  margin-right: 0;
+}
+#videoBrand,
+#editvideoBrand {
+  width: 178px;
+  height: 40px;
+  border-radius: 4px;
+}
+.editVideo-info li > div > label {
+  width: 82px;
+}
+.monitorData > div,
+.editmonitorData > div,
+.editInstrumentPara > div,
+.addInstrumentPara > div {
+  margin-bottom: 14px;
+}
+.monitorData > div h3,
+.editmonitorData > div h3,
+.editInstrumentPara > div h3,
+.addInstrumentPara > div h3 {
+  float: left;
+  line-height: 40px;
+}
+.monitorData > div a,
+.editmonitorData > div a,
+.editInstrumentPara > div a,
+.addInstrumentPara > div a {
+  float: right;
+}
+.addPerameter > div,
+.editPerameter > div {
+  margin-bottom: 20px;
+}
+.addPerameter > div label,
+.editPerameter > div label {
+  float: left;
+  line-height: 40px;
+}
+.addPerameter > div input,
+.editPerameter > div input {
+  float: left;
+  width: 176px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+.addPerameter > div a,
+.editPerameter > div a {
+  float: left;
+}
+.addPerameter table td,
+.editPerameter table td {
+  line-height: 23px !important;
+}
+.addPerameter table td label,
+.editPerameter table td label {
+  margin-top: 5px !important;
+}
+.editmonitorData td {
+  line-height: 27px !important;
+}
+.editmonitorData td input {
+  width: 70px;
+  height: 26px;
+  text-align: center;
+  border: 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+.instrumentCon td {
+  line-height: 25px !important;
+}
+.instrumentCon td label {
+  margin-top: 5px !important;
+}
+.instrumentCon td a {
+  color: #2eadfc;
+}
+.editInstrumentPara td {
+  line-height: 29px !important;
+}
+.addVideo-info li > div > label {
+  width: 80px;
+}
+.addVideoPara-info li > div:nth-child(1) > label,
+.editVideoPara-info li > div:nth-child(1) > label {
+  width: 84px;
+}
+.addVideoPara-info li > div > label,
+.editVideoPara-info li > div > label {
+  width: 114px;
+}
+.radioLi label {
+  float: left;
+  line-height: 40px;
+}
+.radioLi > div label {
+  width: 90px !important;
+}
+.addVideoPara {
+  margin-top: 30px;
+}

@@ -1,0 +1,127 @@
+.boxsizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.infoManageSelectCon {
+  padding: 18px 28px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.infoManageSelectCon > div {
+  float: left;
+  margin-right: 40px;
+}
+.infoManageSelectCon > div label {
+  float: left;
+  line-height: 40px;
+  color: #555;
+}
+.infoManageSelectCon > div p,
+.infoManageSelectCon > div input {
+  float: left;
+  width: 232px;
+  height: 40px;
+  border-radius: 4px;
+}
+.siteInfoCon {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.siteInfoCon td {
+  line-height: 31px !important;
+}
+.siteInfoCon td label {
+  margin-top: 5px !important;
+}
+.siteInfoCon td > a {
+  color: #2eadfc;
+}
+.siteInfoCon td span {
+  display: inline-block;
+  padding-left: 22px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.siteInfoCon td .siteInfo-detail {
+  margin-right: 28px;
+  background: url(../../img/detail.png) left center no-repeat;
+  color: #ff9b42;
+}
+.siteInfoCon td .siteInfo-delete {
+  background: url(../../img/delete.png) left center no-repeat;
+  color: #ff4141;
+}
+.siteInfoCon > div {
+  width: 100%;
+}
+.addSite h3,
+.siteDetail h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 16px;
+}
+.addSite ul li,
+.siteDetail ul li {
+  margin-bottom: 20px;
+}
+.addSite ul li > div,
+.siteDetail ul li > div {
+  float: left;
+}
+.addSite ul li > div input,
+.siteDetail ul li > div input,
+.addSite ul li > div select,
+.siteDetail ul li > div select,
+.addSite ul li > div > p,
+.siteDetail ul li > div > p {
+  float: left;
+  width: 176px;
+  height: 40px;
+  border-radius: 4px;
+}
+.addSite ul li > div #excecuteStandard,
+.siteDetail ul li > div #excecuteStandard {
+  width: 236px;
+}
+.addSite ul li > div label,
+.siteDetail ul li > div label {
+  float: left;
+  width: 80px;
+  color: #666;
+  line-height: 40px;
+}
+.addSite ul li > div #photo,
+.siteDetail ul li > div #photo,
+.addSite ul li > div #addphoto,
+.siteDetail ul li > div #addphoto {
+  display: none;
+}
+.addSite ul li > div label[for=photo],
+.siteDetail ul li > div label[for=photo],
+.addSite ul li > div label[for=addphoto],
+.siteDetail ul li > div label[for=addphoto] {
+  width: 80px;
+  height: 80px;
+  background: url(../../img/uploadPic.png) center center no-repeat;
+}
+.addSite ul li:after,
+.siteDetail ul li:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both;
+}

@@ -1,0 +1,155 @@
+.search-btn {
+  min-width: 90px;
+  height: 38px;
+  line-height: 38px;
+  background-image: linear-gradient(-37deg, #1f94f3 0%, #30b0fd 100%);
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+}
+.export-btn {
+  min-width: 90px;
+  height: 38px;
+  line-height: 38px;
+  background-image: linear-gradient(-37deg, #1f94f3 0%, #30b0fd 100%);
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+  min-width: 99px;
+  height: 34px;
+  line-height: 34px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.tar {
+  text-align: right;
+}
+.tac {
+  text-align: center;
+}
+.lh1 {
+  line-height: 1;
+}
+.fs14 {
+  font-size: 14px;
+}
+.text-f7 {
+  color: #f73e3e!important;
+}
+.text-gray {
+  color: #999;
+}
+.text-disable {
+  color: rgba(102, 102, 102, 0.58);
+}
+h2 {
+  font-size: 100%!important;
+}
+.ablue {
+  font-size: 16px;
+  color: #2eadfc;
+}
+.screen.ctx-wrap {
+  margin-top: 20px;
+}
+.screen.ctx-wrap h2 {
+  height: 50px;
+  line-height: 50px;
+}
+.screen.ctx-wrap h2 .export-btn {
+  margin-top: 8px;
+}
+.screenCon {
+  font-size: 16px;
+}
+.screenCon .form-group {
+  margin-right: 34px;
+}
+.screenCon .form-group:last-child {
+  margin-right: 0;
+}
+.screenCon .form-group .bootstrap-select {
+  width: 200px!important;
+  margin-right: 24px;
+}
+.screenCon .form-group .bootstrap-select:last-child {
+  margin-right: 0;
+}
+.screenCon .form-group .bootstrap-select .btn {
+  font-size: 16px;
+}
+.screenCon .form-group .min-select {
+  width: 145px!important;
+}
+.screenCon .form-group .dropdown-toggle {
+  height: 40px;
+}
+.screenCon .form-group .date-input {
+  height: 40px;
+  line-height: 40px;
+  width: 230px;
+}
+.table-wrap {
+  margin-bottom: 0!important;
+}
+.table-wrap > tbody + tbody {
+  border-top: 0!important;
+}
+.table-wrap thead th {
+  border-bottom: 0!important;
+  background-color: rgba(233, 248, 255, 0.6);
+  color: #333;
+}
+.table-wrap tbody tr td {
+  color: #666;
+}
+.table-wrap tbody tr .bgcolor {
+  background-color: rgba(242, 251, 255, 0.4);
+}
+.table-wrap tbody tr:nth-child(2n) {
+  background-color: rgba(242, 251, 255, 0.4);
+}
+.table-wrap tbody tr:hover {
+  background-color: rgba(242, 251, 255, 0.4);
+}
+.table-wrap th,
+.table-wrap td {
+  font-size: 14px;
+  padding: 10px 8px!important;
+}
+.legend-wrap li {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.legend-wrap li .tl {
+  margin-right: 10px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+input[type='checkbox'] {
+  display: none;
+}
+label[name="cblab"] {
+  cursor: pointer;
+  padding-left: 30px;
+  background: url("../../img/cbvisible.png") no-repeat left center;
+}
+input[type='checkbox']:checked + label[name="cblab"] {
+  background: url("../../img/cbcheck.png") no-repeat left center;
+}
+input[type='radio'] {
+  display: none;
+}
+label[name='radio'] {
+  padding-left: 30px;
+  background: url("../../img/radioVisible.png") no-repeat left center;
+}
+input[type='radio']:checked + label[name='radio'] {
+  background: url("../../img/radioChecked.png") no-repeat left center;
+}

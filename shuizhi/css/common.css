@@ -1,0 +1,868 @@
+.boxsizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.gradient {
+  background: #30b0fd;
+  background: -moz-linear-gradient(left, #30b0fd 0%, #1f94f3 100%);
+  background: -webkit-linear-gradient(left, #30b0fd 0%, #1f94f3 100%);
+  background: linear-gradient(to right, #30b0fd 0%, #1f94f3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#30b0fd', endColorstr='#1f94f3', GradientType=1);
+}
+select {
+  padding: 0 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid 1px #dcdcdc;
+  /*将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("../img/selectPic.png") no-repeat scroll 93% center transparent;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 18px;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+  display: none;
+}
+.error {
+  color: red !important;
+  text-align: center;
+}
+input[name=checkOne],
+input[name=checkOne-2],
+input[name=checkboxSelect] {
+  display: none;
+}
+label[name=checkOne],
+label[name=checkOne-2] {
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(../img/radioVisible.png) left center no-repeat;
+  color: #666;
+  cursor: pointer;
+}
+input[name=checkOne]:checked + label[name=checkOne],
+input[name=checkOne-2]:checked + label[name=checkOne-2] {
+  background: url(../img/radioChecked.png) left center no-repeat;
+}
+label[name=checkboxSelect] {
+  padding-left: 22px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 50px;
+  background: url(../img/checkboxVisible.png) left center no-repeat;
+  cursor: pointer;
+}
+input[name=checkboxSelect]:checked + label[name=checkboxSelect] {
+  background: url(../img/checkboxChecked.png) left center no-repeat;
+}
+.emergencySelectCon td label[name=checkboxSelect],
+.dataAbnormalCon td label[name=checkboxSelect],
+.siteInfoCon td label[name=checkboxSelect],
+.equipInfoCon td label[name=checkboxSelect],
+.addPerameter td label[name=checkboxSelect],
+.editPerameter td label[name=checkboxSelect],
+.instrumentCon td label[name=checkboxSelect],
+.editInstrumentPara td label[name=checkboxSelect],
+.addInstrumentPara td label[name=checkboxSelect],
+.videoCon td label[name=checkboxSelect],
+.linkSiteListCon td label[name=checkboxSelect],
+.editStandard td label[name=checkboxSelect],
+.addStd td label[name=checkboxSelect],
+.messageAlarmListCon td label[name=checkboxSelect] {
+  height: 17px;
+  margin-right: 0;
+  margin-top: 9px;
+}
+.emergencySelectCon th label[name=checkboxSelect],
+.dataAbnormalCon th label[name=checkboxSelect],
+.siteInfoCon th label[name=checkboxSelect],
+.equipInfoCon th label[name=checkboxSelect],
+.addPerameter th label[name=checkboxSelect],
+.editPerameter th label[name=checkboxSelect],
+.instrumentCon th label[name=checkboxSelect],
+.editInstrumentPara th label[name=checkboxSelect],
+.addInstrumentPara th label[name=checkboxSelect],
+.videoCon th label[name=checkboxSelect],
+.linkSiteListCon th label[name=checkboxSelect],
+.editStandard th label[name=checkboxSelect],
+.addStd th label[name=checkboxSelect],
+.messageAlarmListCon th label[name=checkboxSelect] {
+  height: 17px;
+  margin-right: 0;
+}
+.determine,
+.monitor-add-perameter,
+.searchParameter,
+.monitorSearch,
+.linkSiteList-search,
+.addStandard,
+.alarmSearch,
+.historySearch,
+.outData,
+.messageSearch,
+.addPeople,
+.addaddPeople {
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  background: #30b0fd;
+  background: -moz-linear-gradient(left, #30b0fd 0%, #1f94f3 100%);
+  background: -webkit-linear-gradient(left, #30b0fd 0%, #1f94f3 100%);
+  background: linear-gradient(to right, #30b0fd 0%, #1f94f3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#30b0fd', endColorstr='#1f94f3', GradientType=1);
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 4px;
+}
+body,
+html {
+  background: #f4fafb;
+}
+.wrap {
+  width: 100%;
+  min-width: 1440px;
+  padding-top: 86px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.headTitle {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 86px;
+  min-width: 1440px;
+  padding-left: 36px;
+  padding-right: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #006ef1;
+  background: -moz-linear-gradient(left, #006ef1 0%, #30b0fd 100%);
+  background: -webkit-linear-gradient(left, #006ef1 0%, #30b0fd 100%);
+  background: linear-gradient(to right, #006ef1 0%, #30b0fd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006ef1', endColorstr='#30b0fd', GradientType=1);
+}
+.titleName {
+  line-height: 86px;
+  font-size: 30px;
+  color: white;
+  font-family: "SimHei";
+  text-decoration: none;
+}
+.headTitle .set {
+  float: right;
+}
+.logout {
+  float: right;
+}
+.logout i {
+  float: right;
+  line-height: 86px;
+  font-family: "SimHei";
+  font-size: 16px;
+  color: white;
+  font-style: normal;
+}
+.logout span {
+  float: right;
+  width: 20px;
+  height: 86px;
+  margin-right: 8px;
+  margin-left: 20px;
+  background: url(../img/logout.png) center center no-repeat;
+}
+.headerline {
+  float: right;
+  width: 1px;
+  height: 86px;
+  background: url(../img/line.png) center center no-repeat;
+}
+.message {
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 86px;
+  margin-right: 18px;
+  margin-left: 22px;
+  background: url(../img/message.png) center center no-repeat;
+}
+.message strong {
+  position: absolute;
+  top: 25px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #f93636;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+.user {
+  float: right;
+}
+.user var {
+  float: right;
+  margin-left: 6px;
+  color: white;
+  font-size: 14px;
+  line-height: 86px;
+}
+.user var i {
+  font-style: normal;
+}
+.user div {
+  float: right;
+  width: 30px;
+  height: 86px;
+  padding-top: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.user div img {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+}
+.nav {
+  position: fixed;
+  top: 86px;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  height: 100%;
+  min-width: 210px;
+  background: white;
+}
+.navDiv {
+  overflow: auto;
+  height: 100%;
+}
+.navUl {
+  min-height: 900px;
+}
+.navUl > li {
+  padding-left: 9%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.navUl > li > a {
+  display: block;
+  width: 100%;
+  height: 66px;
+  font-size: 19px;
+  color: #666;
+  line-height: 66px;
+  background: url(../img/bottom.png) 93% center no-repeat;
+}
+.navUl > li > a span {
+  float: left;
+  width: 20px;
+  height: 66px;
+  margin-right: 8%;
+}
+.navUl > li > a var {
+  float: left;
+}
+.navUl > li > a:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.navUl > li ol {
+  display: none;
+}
+.navUl > li ol > li {
+  padding-left: 16%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.navUl > li ol > li a {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #666;
+  font-size: 16px;
+}
+.navUl li.active > a {
+  color: #2eadfc;
+}
+.navUl li.active ol {
+  display: block;
+}
+.navUl > li.open > a {
+  background: url(../img/top.png) 93% center no-repeat;
+}
+.ecological > a span {
+  background: url(../img/nav.png) -250px 10px no-repeat;
+}
+.ecological.active > a span {
+  background: url(../img/nav.png) -290px 10px no-repeat;
+}
+.map > a span {
+  background: url(../img/nav.png) -50px 10px no-repeat;
+}
+.map.active > a span {
+  background: url(../img/nav.png) -370px 10px no-repeat;
+}
+.site > a span {
+  background: url(../img/nav.png) -650px 10px no-repeat;
+}
+.site.active > a span {
+  background: url(../img/nav.png) -690px 10px no-repeat;
+}
+.dataManage > a span {
+  background: url(../img/nav.png) -330px 10px no-repeat;
+}
+.dataManage.active > a span {
+  background: url(../img/nav.png) -10px 10px no-repeat;
+}
+.reportForm > a span {
+  background: url(../img/nav.png) -410px 10px no-repeat;
+}
+.reportForm.active > a span {
+  background: url(../img/nav.png) -450px 10px no-repeat;
+}
+.chart > a span {
+  background: url(../img/nav.png) -490px 10px no-repeat;
+}
+.chart.active > a span {
+  background: url(../img/nav.png) -530px 10px no-repeat;
+}
+.monitorStandard > a span {
+  background: url(../img/nav.png) -170px 10px no-repeat;
+}
+.monitorStandard.active > a span {
+  background: url(../img/nav.png) -210px 10px no-repeat;
+}
+.alarm > a span {
+  background: url(../img/nav.png) -90px 10px no-repeat;
+}
+.alarm.active > a span {
+  background: url(../img/nav.png) -130px 10px no-repeat;
+}
+.systemSetup > a span {
+  background: url(../img/nav.png) -570px 10px no-repeat;
+}
+.systemSetup.active > a span {
+  background: url(../img/nav.png) -610px 10px no-repeat;
+}
+.wrapCon {
+  float: right;
+  width: 85%;
+  height: 100%;
+}
+.nowAddr {
+  width: 100%;
+  height: 50px;
+  padding: 0 18px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+  line-height: 50px;
+}
+.nowAddr span {
+  float: left;
+  color: #666;
+}
+.nowAddr p {
+  color: #333;
+}
+.nowAddr p .contentName {
+  color: #bfbfbf;
+}
+.nowAddr p .navName {
+  color: #333;
+}
+.dataAndLongRangeCon,
+.runsetTabCon,
+.infoManage,
+.equipTabCon,
+.realAlarm {
+  padding: 20px 50px 20px 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.screen,
+.instrumentLog,
+.routineSet,
+.dataAbnormal,
+.parameterExceedStandard,
+.emergencySet,
+.emergencySelect,
+.longRangeSelect,
+.longRangeLog,
+.infoManageSelect,
+.siteInfo,
+.equipInfo,
+.instrument,
+.video,
+.monitorSelect,
+.monitorSd,
+.realAlarmSelect,
+.realAlarmList,
+.historyAlarmSelect,
+.historyAlarmList,
+.messageAlarmSelect,
+.messageAlarmList {
+  padding: 0 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  box-shadow: 3px 3px 10px #e8eff3;
+}
+.screen h2,
+.instrumentLog h2,
+.routineSet h2,
+.dataAbnormal h2,
+.parameterExceedStandard h2,
+.emergencySet h2,
+.emergencySelect h2,
+.longRangeSelect h2,
+.longRangeLog h2,
+.infoManageSelect h2,
+.siteInfo h2,
+.equipInfo h2,
+.instrument h2,
+.video h2,
+.monitorSelect h2,
+.monitorSd h2,
+.realAlarmSelect h2,
+.realAlarmList h2,
+.historyAlarmSelect h2,
+.historyAlarmList h2,
+.messageAlarmSelect h2,
+.messageAlarmList h2 {
+  height: 46px;
+  border-bottom: 1px solid #efefef;
+  line-height: 36px;
+}
+.screen h2 var,
+.instrumentLog h2 var,
+.routineSet h2 var,
+.dataAbnormal h2 var,
+.parameterExceedStandard h2 var,
+.emergencySet h2 var,
+.emergencySelect h2 var,
+.longRangeSelect h2 var,
+.longRangeLog h2 var,
+.infoManageSelect h2 var,
+.siteInfo h2 var,
+.equipInfo h2 var,
+.instrument h2 var,
+.video h2 var,
+.monitorSelect h2 var,
+.monitorSd h2 var,
+.realAlarmSelect h2 var,
+.realAlarmList h2 var,
+.historyAlarmSelect h2 var,
+.historyAlarmList h2 var,
+.messageAlarmSelect h2 var,
+.messageAlarmList h2 var {
+  border-left: 3px solid #20bbfe;
+  font-size: 19px;
+  color: #2b2b2b;
+  padding-left: 14px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.routineSet h2 span,
+.dataAbnormal h2 span,
+.parameterExceedStandard h2 span,
+.emergencySet h2 span {
+  font-size: 16px;
+  color: #666;
+}
+.equipInfoCon td,
+.instrumentCon td,
+.videoCon td,
+.monitorSdCon td,
+.messageAlarmListCon td {
+  line-height: 33px !important;
+}
+.equipInfoCon td span,
+.instrumentCon td span,
+.videoCon td span,
+.monitorSdCon td span,
+.messageAlarmListCon td span {
+  display: inline-block;
+  padding-left: 22px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.equipInfoCon td .equipInfo-detail,
+.instrumentCon td .equipInfo-detail,
+.videoCon td .equipInfo-detail,
+.monitorSdCon td .equipInfo-detail,
+.messageAlarmListCon td .equipInfo-detail,
+.equipInfoCon td .instrument-detail,
+.instrumentCon td .instrument-detail,
+.videoCon td .instrument-detail,
+.monitorSdCon td .instrument-detail,
+.messageAlarmListCon td .instrument-detail,
+.equipInfoCon td .video-detail,
+.instrumentCon td .video-detail,
+.videoCon td .video-detail,
+.monitorSdCon td .video-detail,
+.messageAlarmListCon td .video-detail,
+.equipInfoCon td .monitor-detail,
+.instrumentCon td .monitor-detail,
+.videoCon td .monitor-detail,
+.monitorSdCon td .monitor-detail,
+.messageAlarmListCon td .monitor-detail,
+.equipInfoCon td .message-detail,
+.instrumentCon td .message-detail,
+.videoCon td .message-detail,
+.monitorSdCon td .message-detail,
+.messageAlarmListCon td .message-detail {
+  margin-right: 28px;
+  background: url(../img/detail.png) left center no-repeat;
+  color: #ff9b42;
+}
+.equipInfoCon td .equipInfo-delete,
+.instrumentCon td .equipInfo-delete,
+.videoCon td .equipInfo-delete,
+.monitorSdCon td .equipInfo-delete,
+.messageAlarmListCon td .equipInfo-delete,
+.equipInfoCon td .instrument-delete,
+.instrumentCon td .instrument-delete,
+.videoCon td .instrument-delete,
+.monitorSdCon td .instrument-delete,
+.messageAlarmListCon td .instrument-delete,
+.equipInfoCon td .video-delete,
+.instrumentCon td .video-delete,
+.videoCon td .video-delete,
+.monitorSdCon td .video-delete,
+.messageAlarmListCon td .video-delete,
+.equipInfoCon td .monitor-delete,
+.instrumentCon td .monitor-delete,
+.videoCon td .monitor-delete,
+.monitorSdCon td .monitor-delete,
+.messageAlarmListCon td .monitor-delete,
+.equipInfoCon td .message-delete,
+.instrumentCon td .message-delete,
+.videoCon td .message-delete,
+.monitorSdCon td .message-delete,
+.messageAlarmListCon td .message-delete {
+  background: url(../img/delete.png) left center no-repeat;
+  color: #ff4141;
+}
+.runsetTab,
+.equipTab,
+.alarmTab {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+}
+.runsetTab span,
+.equipTab span,
+.alarmTab span {
+  float: left;
+  width: 156px;
+  height: 38px;
+  margin-right: 60px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  cursor: pointer;
+  cursor: hand;
+}
+.runsetTab span.selected,
+.equipTab span.selected,
+.alarmTab span.selected {
+  color: #2eadfc;
+  border-bottom: 2px solid #2eadfc;
+}
+.runsetTabCon > div,
+.equipTabCon > div,
+.alarmCon > div {
+  display: none;
+}
+.runsetTabCon > div.selected,
+.equipTabCon > div.selected,
+.alarmCon > div.selected {
+  display: block;
+}
+.siteInfo-add,
+.equipInfo-add,
+.instrument-add,
+.video-add,
+.addMonitor,
+.messageAdd {
+  float: right;
+  padding-left: 26px;
+  background: url(../img/addNew.png) left center no-repeat;
+  font-size: 14px;
+  color: #2eadfc;
+  line-height: 46px;
+}
+.deleteBatch,
+.equipInfo-deleteBatch,
+.instrument-deleteBatch,
+.video-deleteBatch,
+.message-deleteBatch {
+  display: block;
+  width: 104px;
+  height: 40px;
+  margin: 0 auto;
+  background: #fd746e;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.addSite li > div,
+.equip-info li > div,
+.editInstrument-info li > div,
+.addInstrument-info li > div,
+.addVideo-info li > div,
+.addVideoPara li > div,
+.siteDetail li > div,
+.editVideo li > div,
+.editVideoPara li > div,
+.editStandard > div,
+.addStd > div {
+  position: relative;
+  margin-right: 54px !important;
+}
+.addSite li > div > span,
+.siteDetail li > div > span,
+.equip-info li > div > span,
+.editInstrument-info li > div > span,
+.addInstrument-info li > div > span,
+.addVideo-info li > div > span,
+.addVideoPara li > div > span,
+.editVideo li > div > span,
+.editVideoPara li > div > span,
+.editStandard > div > span,
+.addStd > div > span {
+  position: absolute;
+  float: left;
+  width: 32px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fc3c3c;
+}
+.treeSearchContain {
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.treeSearchContain.show {
+  position: fixed;
+}
+.treeSearch {
+  position: fixed;
+  z-index: 99999;
+  top: 30%;
+  right: -294px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px 0px 0px 6px;
+  background: white;
+}
+.treeSearch h3 {
+  height: 48px;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 48px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.treeSearch h3 var {
+  font-size: 19px;
+  padding-left: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #2b2b2b;
+  border-left: 3px solid #20bbfe;
+}
+.treeSearch .treeSearchCon {
+  position: relative;
+  padding: 16px 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.treeSearch .treeSearchCon > div input {
+  width: 182px;
+  height: 38px;
+  border-radius: 4px;
+}
+.treeSearch .treeSearchCon .determine {
+  width: 64px;
+}
+.treeSearch.show {
+  right: 0;
+}
+.treecon > div > div {
+  display: none;
+}
+.treecon > div.show > div {
+  display: block;
+}
+.inputValue2 {
+  display: none;
+}
+.treecon .treeOne {
+  border-bottom: 1px solid #dcdcdc;
+}
+.treecon > div {
+  min-height: 60px;
+  padding-top: 20px;
+}
+.treecon > div > span {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+.treecon > div > div {
+  overflow: auto;
+  max-height: 240px;
+}
+.showOrNotButton {
+  position: absolute;
+  top: 26%;
+  left: -26px;
+  width: 26px;
+  height: 120px;
+  background: url(../img/hideTree.png) center center no-repeat;
+  cursor: pointer;
+}
+.showOrNotButton.show {
+  background: url(../img/showTree.png) center center no-repeat;
+}
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+.pager li {
+  display: inline;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.pager li > a {
+  color: #1e7fff;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+#pageID {
+  width: 50px;
+  height: 25px;
+  margin-left: 14px;
+  font-size: 15px;
+  border: 1px solid #a0a0a0;
+  text-align: center;
+}
