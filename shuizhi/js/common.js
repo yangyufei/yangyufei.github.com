@@ -2,16 +2,16 @@
 * @Author: 杨玉飞
 * @Date:   2018-05-23 09:13:20
 * @Last Modified by:   anchen
-* @Last Modified time: 2018-06-06 10:41:02
+* @Last Modified time: 2018-06-25 11:18:45
 */
 
 $(function(){
-    /*$(".headTitle").load("../tpl/header.html");
-    $(".nav").load("../tpl/nav.html");*/
+    $(".headTitle").load("../tpl/header.html");
+    $(".nav").load("../tpl/nav.html");
 });
 // 全选
 function selectAll(all,childInput,childrenInputLength,inputCheckedLength){
-    alert("我被调用了");
+    // alert("我被调用了");
     $(all).change(function(){
         var isCheck=$(all).is(':checked');
         $(childInput).each(function() {
