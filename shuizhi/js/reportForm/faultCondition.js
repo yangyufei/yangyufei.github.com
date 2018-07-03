@@ -1,5 +1,6 @@
 
 $(function() {
+    $('#myChart').css({height: '320px'})
     _initChart()
 })
 
@@ -42,5 +43,8 @@ function _initChart() {
     };
     myChart.setOption(option)
     // 根据屏幕自适应
-    window.onresize = myChart.resize;
+    $(window).on('resize', function () {
+        initChartWH()
+        myChart.resize()
+    })
 }

@@ -82,23 +82,23 @@ function _initChart1 () {
                 },
                 data:[
                     {
-                        value:89,
+                        value:80,
                         name:'Ⅰ'
                     },
                     {
-                        value:3,
+                        value:5,
                         name:'Ⅱ'
                     },
                     {
-                        value:1,
+                        value:5,
                         name:'Ⅲ'
                     },
                     {
-                        value:6,
+                        value:5,
                         name:'Ⅳ'
                     },
                     {
-                        value:2,
+                        value:5,
                         name:'Ⅴ'
                     },
                     {
@@ -111,7 +111,10 @@ function _initChart1 () {
     };
     myChart.setOption(option)
     // 根据屏幕自适应
-    window.onresize = myChart.resize;
+    $(window).on('resize', function () {
+        initChartWH()
+        myChart.resize()
+    })
 }
 
 // 水质评价图表
@@ -199,7 +202,10 @@ function _initChart2 () {
     };
     myChart.setOption(option)
     // 根据屏幕自适应
-    window.onresize = myChart.resize;
+    $(window).on('resize', function () {
+        initChartWH()
+        myChart.resize()
+    })
 }
 
 // 把数值转换为罗马数字

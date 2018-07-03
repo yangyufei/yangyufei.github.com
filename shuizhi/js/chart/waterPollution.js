@@ -45,6 +45,9 @@ function _initChart () {
                 nameLocation:'middle',
                 nameGap: 35,
                 type : 'value',
+                nameTextStyle: {
+                    color: '#666666'
+                },
                 axisTick: {
                     show: false
                 },
@@ -84,5 +87,8 @@ function _initChart () {
     };
     myChart.setOption(option)
     // 根据屏幕自适应
-    window.onresize = myChart.resize;
+    $(window).on('resize', function () {
+        initChartWH()
+        myChart.resize()
+    })
 }

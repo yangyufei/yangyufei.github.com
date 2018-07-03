@@ -221,11 +221,11 @@
                                             <td class="abnormal-parameter">CONMn</td>
                                             <td>
                                                 <select name="" id="">
-                                                    <option value="" type="canchange">前一个正常数据</option>
-                                                    <option value="" type="canchange">前一个月均值</option>
-                                                    <option value="" type="nochange">历史经验值</option>
+                                                    <option value="" type="nochange">前一个正常数据</option>
+                                                    <option value="" type="nochange">前一个月均值</option>
+                                                    <option value="" type="canchange">历史经验值</option>
                                                 </select>
-                                                <input type="text" class="dataValue" value="0">
+                                                <input type="text" class="dataValue" value="0" disabled>
                                                 <input type="text" class="person" value="80">%
                                             </td>
                                             <td class="dataAbnormal-set">设置</td>
@@ -239,11 +239,11 @@
                                             <td class="abnormal-parameter">氨氮</td>
                                             <td>
                                                 <select name="" id="">
-                                                    <option value="" type="canchange">前一个正常数据</option>
-                                                    <option value="" type="canchange">前一个月均值</option>
-                                                    <option value="" type="nochange">历史经验值</option>
+                                                    <option value="" type="nochange">前一个正常数据</option>
+                                                    <option value="" type="nochange">前一个月均值</option>
+                                                    <option value="" type="canchange">历史经验值</option>
                                                 </select>
-                                                <input type="text" class="dataValue" value="0">
+                                                <input type="text" class="dataValue" value="0" disabled>
                                                 <input type="text" class="person" value="80">%
                                             </td>
                                             <td class="dataAbnormal-set">设置</td>
@@ -257,11 +257,11 @@
                                             <td class="abnormal-parameter">氨氮</td>
                                             <td>
                                                 <select name="" id="">
-                                                    <option value="" type="canchange">前一个正常数据</option>
-                                                    <option value="" type="canchange">前一个月均值</option>
-                                                    <option value="" type="nochange">历史经验值</option>
+                                                    <option value="" type="nochange">前一个正常数据</option>
+                                                    <option value="" type="nochange">前一个月均值</option>
+                                                    <option value="" type="canchange">历史经验值</option>
                                                 </select>
-                                                <input type="text" class="dataValue" value="0">
+                                                <input type="text" class="dataValue" value="0" disabled>
                                                 <input type="text" class="person" value="80">%
                                             </td>
                                             <td class="dataAbnormal-set">设置</td>
@@ -315,7 +315,7 @@
                                 <h2 class="clearfix">
                                     <var>数据异常运行设置</var>
                                     <span>2018-05-01 15:00</span>
-                                    <a href="#" class="parameterChange">告警参数与阀值变更</a>
+                                    <a href="#" class="parameterChange">告警参数与阈值变更</a>
                                 </h2>
                                 <div class="parameterExceedStandardCon">
                                     <table class="table table-striped">
@@ -347,7 +347,7 @@
                                                     <option value="">8</option>
                                                     <option value="">9</option>
                                                     <option value="">10</option>
-                                                </select>监测值大于等于1.2时</td>
+                                                </select>次正常值后，自动消警</td>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
@@ -366,7 +366,7 @@
                                                     <option value="">8</option>
                                                     <option value="">9</option>
                                                     <option value="">10</option>
-                                                </select>监测值大于等于1.2时</td>
+                                                </select>次正常值后，自动消警</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -441,7 +441,7 @@
                                                 <option value="">8</option>
                                                 <option value="">9</option>
                                                 <option value="">10</option>
-                                            </select>次正常值后回复正常模式
+                                            </select>次正常值后恢复正常模式
                                         </div>
                                     </div>
                                 </div>
@@ -459,7 +459,7 @@
                                                         <label for="emergencyAll" name="checkboxSelect"></label>
                                                     </th>
                                                     <th>参数</th>
-                                                    <th>应急启动阀值</th>
+                                                    <th>应急启动阈值</th>
                                                     <th>确认超标后运行</th>
                                                 </tr>
                                             </thead>
@@ -574,9 +574,9 @@
                         <input type="radio" name="checkOne" id="day" onchange="secondOrDay()">
                         <label for="day" name="checkOne">按天数</label>
                     </div>
-                    <div>
+                    <div class="settime" style="display: none;">
                         <label for="startTime">开始时间：</label>
-                        <input readonly="readonly" type="text" class="Wdate" id="startTime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+                        <input readonly="readonly" type="text" class="Wdate" id="startTime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})"/>
                     </div>
                 </div>
                 <ul class="accordionToSecond selected">
@@ -858,12 +858,13 @@
                 </ul>
             </div>
         </script>
-        <!--参数超标设置-告警参数与阀值变更-->
+        <!--参数超标设置-告警参数与阈值变更-->
         <script type="text/html" id="exceedStandardContent">
             <div class="exceedStandardCon">
                 <table class="table table-striped">
                     <thead>
                         <tr>
+                            <th rowspan="2">编号</th>
                             <th rowspan="2" style="line-height: 58px;">参数名称</th>
                             <th colspan="2">一般超标告警</th>
                             <th colspan="2">严重超标告警</th>
@@ -880,22 +881,24 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>1</td>
                             <td>氨氮</td>
-                            <td>3</td>
-                            <td>5</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>2</td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
                         </tr>
                         <tr>
+                            <td>2</td>
                             <td>氨氮</td>
-                            <td>3</td>
-                            <td>5</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>2</td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
+                            <td><input type="text" value="3"></td>
                         </tr>
                     </tbody>
                 </table>

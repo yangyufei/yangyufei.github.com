@@ -1,4 +1,6 @@
 $(function(){
+    // 监测设备信息-表格全选
+    selectAll("#monitorAll",".monitorSdCon td input[type='checkbox']",".monitorSdCon tbody tr",".monitorSdCon td input:checked");
     // 关联站点
     $(".linkSite").click(function(){
         var html =template("linkSiteList");
@@ -20,11 +22,11 @@ $(function(){
     $(".monitor-detail").click(function(){
         var html =template("editStandard");
         dialog({
-            title: "编辑监测标准配置",
+            title: "编辑监测标准组",
             content: html,
             cancelValue: "取消",
             cancel: true,
-            okValue: "确定",
+            okValue: "保存",
             ok: function(){
                 $("input[type=submit]").click();
                 var cb = $(".form").validate().form();
@@ -41,7 +43,7 @@ $(function(){
     $(".addMonitor").click(function(){
         var html =template("addStd");
         dialog({
-            title: "新增监测标准配置",
+            title: "新增监测标准组",
             content: html,
             cancelValue: "取消",
             cancel: true,
@@ -90,7 +92,7 @@ function addStandard(){
     } else {
         index = "五";
     }
-    var th1 = "<th colspan='2' class='twoType'><var>地表水环境质量"+index+"类标准</var><span onclick='delStandard()'></span></th>";
+    var th1 = "<th colspan='2' class='twoType'><input type='text' value='地表水环境质量"+index+"类标准'><span onclick='delStandard()'></span></th>";
     var th2 = "<th>下限(>)</th><th>上限(≤)</th>";
     var td = "<td class='addInput'><input type='text'></td>";
     $(".editStandard thead tr:nth-child(1)").append(th1);
@@ -127,7 +129,7 @@ function newStandard(){
     } else {
         index = "五";
     }
-    var th1 = "<th colspan='2' class='twoType'><var>地表水环境质量"+index+"类标准</var><span onclick='newdelStandard()'></span></th>";
+    var th1 = "<th colspan='2' class='twoType'><input type='text' value='地表水环境质量"+index+"类标准'><span onclick='newdelStandard()'></span></th>";
     var th2 = "<th>下限(>)</th><th>上限(≤)</th>";
     var td = "<td class='addInput'><input type='text'></td>";
     $(".addStd thead tr:nth-child(1)").append(th1);

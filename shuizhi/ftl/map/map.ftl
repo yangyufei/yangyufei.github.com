@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>地图与监控</title>
+    <link rel="stylesheet" type="text/css" href="${basePath}/css/reset.css" />
+    <link rel="stylesheet" type="text/less" href="${basePath}/css/common.less" />
+    <link rel="stylesheet" type="text/less" href="${basePath}/css/dataManage/common.less" />
+    <!--页面特有css-->
+    <link rel="stylesheet" type="text/less" href="${basePath}/css/map/map.less">
+    <link rel="stylesheet" type="text/css" href="${basePath}/js/time/skin/WdatePicker.css" />
+    <link rel="stylesheet" type="text/css" href="${basePath}/js/time/skin/default/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="${basePath}/js/time/skin/whyGreen/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="${basePath}/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="${basePath}/css/bootstrap-select.css" />
+    <script type="text/javascript" src="${basePath}/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="${basePath}/js/less.js"></script>
+    <script type="text/javascript" src="${basePath}/js/common.js"></script>
+    <script type="text/javascript" src="${basePath}/js/time/WdatePicker.js"></script>
+    <script type="text/javascript" src="${basePath}/js/bootstrap.js"></script>
+    <script type="text/javascript" src="${basePath}/js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="${basePath}/js/echarts.js"></script>
+    <!-- 页面特有js -->
+    <script type="text/javascript" src="${basePath}/js/map/map.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="headTitle clearfix"></div>
+    <div class="wrap-con">
+        <div class="nav">
+
+        </div>
+        <div class="wrapCon">
+            <div class="nowAddr clearfix">
+                <span>当前位置：</span>
+                <p><a href="#" class="contentName"><var class="navName">实时地图与监控</var></p>
+            </div>
+            <div class="dataAndLongRange clearfix">
+                <span class="selected">实时地图</span>
+                <span>实时监控</span>
+            </div>
+            <div class="dataAndLongRangeCon">
+                <div class="dataAcquisition selected">实时地图</div>
+                <div class="dataAcquisition">
+                    <div class="screen">
+                        <h2 class="clearfix">
+                            <var>筛选</var>
+                        </h2>
+                        <form class="form-inline screenCon">
+                            <div class="form-line-wrap">
+                                <div class="form-group">
+                                    <label for="">站点状态：</label>
+                                    <select id="siteStatus" class="selectpicker">
+                                        <option value="1">全部</option>
+                                        <option value="2">正常</option>
+                                        <option value="3">离线</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-line-wrap flw-cb-wrap">
+                                <div class="form-group">
+                                    <label for="" class="fl">参数选择：</label>
+                                    <div class="r-checkbox">
+                                        <span>
+                                            <input type="checkbox" id="all"/>
+                                            <label for="all" name="cblab">全选</label>
+                                        </span>
+                                        <span>
+                                            <input type="checkbox" id="params1" class="params-c"/>
+                                            <label for="params1" name="cblab">流速</label>
+                                        </span>
+                                        <span>
+                                            <input type="checkbox" id="params2" class="params-c"/>
+                                            <label for="params2" name="cblab">水温</label>
+                                        </span>
+                                        <span>
+                                            <input type="checkbox" id="params3" class="params-c"/>
+                                            <label for="params3" name="cblab">氨氮</label>
+                                        </span>
+                                        <span>
+                                            <input type="checkbox" id="params4" class="params-c"/>
+                                            <label for="params4" name="cblab">溶解氧</label>
+                                        </span>
+                                        <span>
+                                            <input type="checkbox" id="params5" class="params-c"/>
+                                            <label for="params5" name="cblab">水位</label>
+                                        </span>
+                                        <span>
+                                            <input type="checkbox" id="params6" class="params-c"/>
+                                            <label for="params6" name="cblab">总磷</label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tar search-btn-wrap">
+                                <button type="button" class="search-btn">查询</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="screen ctx-wrap">
+                        <h2 class="clearfix">
+                            <var>实时监控列表</var>
+                            <div class="fr date-fr">
+                                <label for="">站点状态：</label>
+                                在线<span class="num1">2</span>个
+                                离线<span class="num2">1</span>个
+                                超标<span class="num3">1</span>个
+                            </div>
+                        </h2>
+                        <div class="screenCon clearfix">
+                            <div class="fl table-div">
+                                <table class="table table-striped table-wrap">
+                                    <thead>
+                                    <tr>
+                                        <th>编号</th>
+                                        <th>所属区域</th>
+                                        <th>所属流域</th>
+                                        <th>站点名称</th>
+                                        <th>状态</th>
+                                        <th>变化趋势</th>
+                                        <th>视频监控</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>福州市</td>
+                                        <td>福州市内河</td>
+                                        <td>白马河站</td>
+                                        <td>正常</td>
+                                        <td class="img-td">
+                                            <a href="#">
+                                                <img src="${basePath}/img/bhqs.png" alt="">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                查看视频
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>福州市</td>
+                                        <td>福州市内河</td>
+                                        <td>白马河站</td>
+                                        <td>正常</td>
+                                        <td class="img-td">
+                                            <a href="#">
+                                                <img src="${basePath}/img/bhqs.png" alt="">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                查看视频
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>福州市</td>
+                                        <td>福州市内河</td>
+                                        <td>白马河站</td>
+                                        <td>正常</td>
+                                        <td class="img-td">
+                                            <a href="#">
+                                                <img src="${basePath}/img/bhqs.png" alt="">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                查看视频
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="fl table-div">
+                                <table class="table table-striped table-wrap">
+                                    <thead>
+                                    <tr>
+                                        <th>数据时间</th>
+                                        <th>pH(无量纲)</th>
+                                        <th>溶解氧(mg/L)</th>
+                                        <th>浊度(NTU)</th>
+                                        <th>氨氮(mg/L)</th>
+                                        <th>电导率(μS/cm)</th>
+                                        <th>氨氮(mg/L)</th>
+                                        <th>总氮(mg/L)</th>
+                                        <th>总磷(mg/L)</th>
+                                        <th>CODMn(mg/L)</th>
+                                        <th>总磷(mg/L)</th>
+                                        <th>CODMn(mg/L)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2018-05-26 15:05:42</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018-05-26 15:05:42</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018-05-26 15:05:42</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                        <td>4.89</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

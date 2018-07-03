@@ -2,12 +2,14 @@
 * @Author: 杨玉飞
 * @Date:   2018-05-23 09:13:20
 * @Last Modified by:   anchen
-* @Last Modified time: 2018-06-25 11:18:45
+* @Last Modified time: 2018-06-06 10:41:02
 */
 
 $(function(){
     $(".headTitle").load("../tpl/header.html");
     $(".nav").load("../tpl/nav.html");
+
+    initChartWH(0)
 });
 // 全选
 function selectAll(all,childInput,childrenInputLength,inputCheckedLength){
@@ -250,3 +252,11 @@ function getWeekList(year) {
     return weekList
 }
 
+// 初始化图表宽度高度
+function initChartWH (type) {
+    var width = '100%'
+    if (parseInt(type) == 0) {
+        width = $(document).width() * 0.85 - 88 + 'px'
+    }
+    $('.chartBox').css({width: width, height: '400px'})
+}

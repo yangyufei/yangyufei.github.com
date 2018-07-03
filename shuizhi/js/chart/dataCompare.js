@@ -3,7 +3,7 @@ $(function () {
         $(this).addClass("selected").siblings("span").removeClass("selected").parent().siblings(".dataAndLongRangeCon").children("div").eq($(this).index()).addClass("selected").siblings().removeClass("selected");
         _initChart($(this).index())
     })
-    _initChart(0)
+    _initChart(0);
 })
 
 var option = {
@@ -151,5 +151,8 @@ function _initChart(index) {
     }
     myChart.setOption(option)
     // 根据屏幕自适应
-    window.onresize = myChart.resize;
+    $(window).on('resize', function () {
+        initChartWH()
+        myChart.resize()
+    })
 }

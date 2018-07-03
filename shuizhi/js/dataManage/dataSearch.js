@@ -62,6 +62,9 @@ var option = {
     yAxis: [{
         type: 'value',
         name: '单位：mg/L',
+        nameTextStyle: {
+            color: '#666666'
+        },
         axisTick: {
             show: false
         },
@@ -169,5 +172,8 @@ var _initChart = function (index) {
 
     myChart.setOption(option)
     // 根据屏幕自适应
-    window.onresize = myChart.resize;
+    $(window).on('resize', function () {
+        initChartWH()
+        myChart.resize()
+    })
 }
